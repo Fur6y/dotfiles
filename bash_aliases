@@ -1,3 +1,8 @@
+# Exports
+export VISUAL="atom"
+export EDITOR="$VISUAL"
+export GIT_EDITOR="atom --wait"
+
 # Always use color output for `ls`
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
