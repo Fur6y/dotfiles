@@ -1,4 +1,11 @@
 .DS_Store
 backup/*
 gitconfig_private
-atom/*
+
+# Atom Editor Folder
+atom/packages
+atom/dev
+atom/compile-cache
+atom/storage
+atom/.apm
+atom/.gitignore
