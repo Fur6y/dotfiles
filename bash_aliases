@@ -2,6 +2,7 @@
 export VISUAL="atom"
 export EDITOR="$VISUAL"
 export GIT_EDITOR="atom --wait"
+export ATOM_HOME=$HOME/dotfiles/atom
 
 # Always use color output for `ls`
 export CLICOLOR=1

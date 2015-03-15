@@ -1,0 +1,34 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+ .tree-view-resizer {
+     width: 300px;
+ }
+
+.tree-view {
+
+}
+
+// fix gutter width if git-diff displays icons
+atom-text-editor .gutter.git-diff-icon .line-number, atom-text-editor::shadow .gutter.git-diff-icon .line-number {
+  padding-left: 0;
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+
+}

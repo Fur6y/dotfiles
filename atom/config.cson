@@ -1,0 +1,54 @@
+"*":
+  editor:
+    invisibles: {}
+    fontSize: 13
+    lineHeight: 1.4
+    showIndentGuide: true
+  core:
+    projectHome: "~/git/"
+    disabledPackages: [
+      "filetype-color"
+      "remember-session"
+      "package-js-generator"
+      "linter-coffeelint"
+      "emmet"
+      "linter"
+      "linter-jshint"
+      "linter-scss-lint"
+    ]
+  "exception-reporting":
+    userId: "a098c42d-c584-2cb0-89f7-de6d86ca63fd"
+  welcome:
+    showOnStartup: false
+  "linter-jshint": {}
+  linter: {}
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+  emmet: {}
+  "linter-scss-lint": {}
+  "atom-alignment": {}
+  "autocomplete-plus": {}
+  "remember-session":
+    x: 0
+    y: 23
+    width: 1440
+    height: 873
+    treeWidth: 300
+    path: ""
+    tabs: ""
+    selectedTab: ""
+  "filetype-color":
+    enabled: "true"
+  whitespace:
+    ensureSingleTrailingNewline: false
+  "package-generator":
+    createInDevMode: true
+  "package-js-generator": {}
+  "file-icons": {}
+  "markdown-preview": {}
+  "atom-color-highlight": {}
+  "highlight-selected": {}
+  "linter-coffeelint": {}
+  "git-diff":
+    showIconsInEditorGutter: true
