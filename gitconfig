@@ -9,7 +9,7 @@
 	ltag = "!git log --oneline --decorate=short | awk '/tag/ {print substr($3,0,(length($3)-1)) \"\\t\" $1 \"\\t\" ($1=$2=$3=\"\") $0}'"
 	undo = reset --soft 'HEAD^'
 	redo = commit -c ORIG_HEAD
-	ss = stash save --all
+	ss = stash save --include-untracked
 [push]
 	default = simple
 [core]
