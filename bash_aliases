@@ -13,6 +13,6 @@ alias ls="ls -G"
 alias update="echo 'Updating OSX ...'; sudo softwareupdate -i -a; echo 'Updating Homebrew ...'; brew update; brew upgrade; brew cleanup; echo 'Updating Homebrew Caskroom ...'; brew cask update; brew cask cleanup; echo 'Updating NPM ...'; npm install -g npm@latest"
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en0"
+alias ipglobal="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip="ifconfig | grep -o '\inet\s[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.*broadcast' | grep -o '[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}'"
 
