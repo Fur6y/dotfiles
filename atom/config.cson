@@ -49,7 +49,8 @@
   "package-generator":
     createInDevMode: true
   "package-js-generator": {}
-  "file-icons": {}
+  "file-icons":
+    onChanges: true
   "markdown-preview": {}
   "atom-color-highlight": {}
   "highlight-selected": {}
