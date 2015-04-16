@@ -9,3 +9,4 @@ atom/compile-cache
 atom/storage
 atom/.apm
 atom/.gitignore
+atom/.node-gyp
