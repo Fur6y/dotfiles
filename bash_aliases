@@ -3,6 +3,16 @@ export VISUAL="atom"
 export EDITOR="$VISUAL"
 export GIT_EDITOR="atom --wait"
 export ATOM_HOME=$HOME/dotfiles/atom
+# Android SDK
+export ANDROID_HOME="/usr/local/opt/android-sdk"
+PATH=$ANDROID_HOME/tools:$PATH
+PATH=$ANDROID_HOME/platform-tools:$PATH
+PATH=$ANDROID_HOME/build-tools/20.0.0:$PATH
+# Ant
+export ANT_HOME=/usr/share/ant
+PATH=$ANT_HOME/bin:$PATH
+# Java
+export JAVA_HOME=`/usr/libexec/java_home`
 
 # Always use color output for `ls`
 export CLICOLOR=1
