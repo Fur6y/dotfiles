@@ -16,6 +16,10 @@
       "linter-jshint"
       "linter-scss-lint"
     ]
+    themes: [
+      "atom-dark-ui"
+      "monokai"
+    ]
   "exception-reporting":
     userId: "a098c42d-c584-2cb0-89f7-de6d86ca63fd"
   welcome:
