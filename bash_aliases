@@ -1,7 +1,7 @@
 # Exports
 export VISUAL="atom"
 export EDITOR="$VISUAL"
-export GIT_EDITOR="atom --wait"
+export GIT_EDITOR="nano"
 export ATOM_HOME=$HOME/dotfiles/atom
 # Android SDK
 export ANDROID_HOME="/usr/local/opt/android-sdk"

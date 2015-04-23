@@ -10,6 +10,7 @@
 	undo = reset --soft 'HEAD^'
 	redo = commit -c ORIG_HEAD
 	ss = stash save --include-untracked
+	ba = branch -avv
 [push]
 	default = simple
 [core]
