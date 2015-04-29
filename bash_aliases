@@ -14,6 +14,9 @@ PATH=$ANT_HOME/bin:$PATH
 # Java
 export JAVA_HOME=`/usr/libexec/java_home`
 
+# highlighting grep matches in color
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;32' #green
 # Always use color output for `ls`
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
