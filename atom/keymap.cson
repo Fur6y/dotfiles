@@ -26,11 +26,6 @@
 
 
 '.platform-darwin atom-text-editor':
-  'cmd-e': 'unset!'
-
-'atom-text-editor':
   'cmd-e': 'editor:delete-line'
-
-# git diff popup plugin
-'.editor:not(.mini)':
+  # git diff popup plugin
   'shift-cmd-g': 'git-diff-popup:toggle'
