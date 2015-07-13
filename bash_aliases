@@ -23,7 +23,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 alias ls="ls -G"
 
 # Get OS X Software Updates, and update installed Homebrew
-alias update="echo 'Updating OSX ...'; sudo softwareupdate -i -a; echo 'Updating Homebrew ...'; brew update; brew upgrade; brew cleanup; echo 'Updating Homebrew Caskroom ...'; brew cask update; brew cask cleanup; echo 'Updating NPM ...'; npm install -g npm@latest"
+alias update="echo 'Updating OSX ...'; sudo softwareupdate -i -a; echo 'Updating Homebrew ...'; brew update; brew upgrade --all; brew cleanup; echo 'Updating Homebrew Caskroom ...'; brew cask update; brew cask cleanup; echo 'Updating NPM ...'; npm install -g npm@latest; echo 'Updating NPM Global Packages...'; npm update -g; echo 'Updating GEM...'; sudo gem update --system; sudo gem update; sudo gem clean;"
 
 # IP addresses
 alias ipglobal="dig +short myip.opendns.com @resolver1.opendns.com"
