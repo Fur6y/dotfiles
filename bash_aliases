@@ -28,4 +28,6 @@ alias update="echo 'Updating OSX ...'; sudo softwareupdate -i -a; echo 'Updating
 # IP addresses
 alias ipglobal="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ip="ifconfig | grep -o '\inet\s[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.*broadcast' | grep -o '[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}'"
-
+# npm list only top level
+alias ng="npm list -g --depth=0 2>/dev/null"
+alias nl="npm list --depth=0 2>/dev/null"
