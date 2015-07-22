@@ -17,6 +17,7 @@
 	editor = nano
 [merge]
 	tool = kdiff3
+	ff = false
 [fetch]
 	prune = true
 [remote "origin"]
