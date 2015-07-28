@@ -33,5 +33,9 @@ alias ip="ifconfig | grep -o '\inet\s[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9
 # npm list only top level
 alias ng="npm list -g --depth=0 2>/dev/null"
 alias nl="npm list --depth=0 2>/dev/null"
+# evn
+alias ndev="export NODE_ENV=development"
+alias nprod="export NODE_ENV=production"
+alias nstage="export NODE_ENV=staging"
 # show a list of all aliases
 alias aliases="compgen -a"
