@@ -1,15 +1,14 @@
 #!/bin/bash
+
 ############################
-# .make.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# This script backups current dotfiles and
+# create symbolic links to new dotfiles
 ############################
 
 ########## Variables
-
 dir=~/dotfiles                  	# dotfiles directory
 olddir=~/dotfiles/backup        	# old dotfiles backup directory
-files="bash_profile gitconfig"  	# list of files/folders to symlink in homedir
-
+files="bash_profile gitconfig atom vimrc vim"  	# list of files/folders to symlink in homedir
 ##########
 
 # create dotfiles_old in homedir
