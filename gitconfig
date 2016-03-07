@@ -1,5 +1,5 @@
 [include]
-	path = ~/dotfiles/gitconfig_private
+	path = ~/dotfiles/gitconfig.private
 [alias]
     # git-number, see: https://github.com/holygeek/git-number
     st = number -s
@@ -17,10 +17,11 @@
 [push]
 	default = simple
 [core]
-	editor = nano
+	editor = vim
+	excludesfile = /Users/fabian/.gitignore_global
 [merge]
 	tool = kdiff3
-	ff = false
+	ff = true
 [fetch]
 	prune = true
 [remote "origin"]

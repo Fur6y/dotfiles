@@ -1,70 +1,139 @@
 "*":
-  editor:
-    invisibles: {}
-    fontSize: 13
-    lineHeight: 1.4
-    showIndentGuide: true
+  "activate-power-mode":
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake: {}
+  "atom-alignment": {}
+  "atom-beautify":
+    _analyticsUserId: "83f70fc5-ac96-41eb-ab18-647ba26ecb9d"
+  "atom-color-highlight": {}
+  "autocomplete-plus": {}
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     projectHome: "~/git/"
-    disabledPackages: [
-      "filetype-color"
-      "remember-session"
-      "package-js-generator"
-      "linter-coffeelint"
-      "emmet"
-      "linter"
-      "linter-jshint"
-      "linter-scss-lint"
-    ]
     themes: [
       "atom-dark-ui"
       "monokai"
     ]
+  editor:
+    backUpBeforeSaving: true
+    invisibles: {}
+    lineHeight: 1.4
+    preferredLineLength: 100
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabLength: 4
+    tabType: "soft"
+  emmet: {}
   "exception-reporting":
     userId: "a098c42d-c584-2cb0-89f7-de6d86ca63fd"
-  welcome:
-    showOnStartup: false
-  "linter-jshint":
-    lintInlineJavaScript: true
-  linter:
-    showErrorInline: false
-  "tree-view":
-    showOnRightSide: true
-    hideIgnoredNames: true
-  emmet: {}
-  "linter-scss-lint": {}
-  "atom-alignment": {}
-  "autocomplete-plus": {}
-  "remember-session":
-    x: 0
-    y: 23
-    width: 1440
-    height: 873
-    treeWidth: 300
-    path: ""
-    tabs: ""
-    selectedTab: ""
+  "file-icons":
+    onChanges: true
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
   "filetype-color":
     enabled: "true"
-  whitespace:
-    ensureSingleTrailingNewline: false
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-projects":
+    rootPath: "~/git"
+    sortBy: "Latest modification date"
+  "highlight-selected": {}
+  latex: {}
+  "latex-plus":
+    texBin: "/usr/texbin"
+  linter:
+    showErrorInline: false
+  "linter-coffeelint": {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+    lintInlineJavaScript: true
+  "linter-jsxhint": {}
+  "linter-scss-lint": {}
+  "markdown-pdf": {}
+  "markdown-preview":
+    useGitHubStyle: true
+  nuclide:
+    "nuclide-arcanist": {}
+    "nuclide-buck-files": {}
+    "nuclide-clang-atom": {}
+    "nuclide-datatip": {}
+    "nuclide-debugger-hhvm": {}
+    "nuclide-file-tree": {}
+    "nuclide-flow": {}
+    "nuclide-format-js": {}
+    "nuclide-hack": {}
+    "nuclide-health": {}
+    "nuclide-home":
+      showHome: false
+    "nuclide-ios-simulator-logs": {}
+    "nuclide-ocaml": {}
+    "nuclide-output": {}
+    "nuclide-working-sets":
+      workingSets: [
+        {
+          name: "install"
+          active: false
+          uris: [
+            "/Users/fabian/dotfiles/install.sh"
+            "/Users/fabian/dotfiles/osx.sh"
+          ]
+        }
+      ]
   "package-generator":
     createInDevMode: true
   "package-js-generator": {}
-  "file-icons":
-    onChanges: true
-  "markdown-preview": {}
-  "atom-color-highlight": {}
-  "highlight-selected": {}
-  "linter-coffeelint": {}
-  "git-diff":
-    showIconsInEditorGutter: true
-  "project-palette-finder": {}
-  "terminal-panel": {}
+  pigments: {}
+  react: {}
+  "remember-session":
+    height: 873
+    path: ""
+    selectedTab: ""
+    tabs: ""
+    treeWidth: 300
+    width: 1440
+    x: 0
+    y: 23
+  "spell-check": {}
   term2:
     colors: {}
-  pigments: {}
-  "linter-eslint":
-    useGlobalEslint: true
-  react: {}
-  "linter-jsxhint": {}
+  "terminal-panel": {}
+  "toggle-quotes": {}
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+  "tree-view-filter":
+    liveUpdate: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+".ansi.text":
+  editor:
+    preferredLineLength: 100
+".hack.html.text":
+  editor:
+    preferredLineLength: 100
+".hackfragment.source":
+  editor:
+    preferredLineLength: 100
+".ini.source":
+  editor:
+    preferredLineLength: 100
+".plain.text":
+  editor:
+    preferredLineLength: 100

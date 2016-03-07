@@ -43,3 +43,7 @@
 '.platform-darwin .markdown-preview':
   'ctrl-0': 'markdown-preview:reset-zoom'
 
+# toggle quote plugin
+'.platform-darwin atom-workspace':
+  'cmd-\'': 'toggle-quotes:toggle'
+

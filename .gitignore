@@ -1,12 +1,16 @@
 .DS_Store
+npm-debug.log
 backup/*
-gitconfig_private
+*.private*
 
-# Atom Editor Folder
-atom/packages
-atom/dev
-atom/compile-cache
-atom/storage
+# vim
+vim/undo
+
+# atom editor
 atom/.apm
-atom/.gitignore
 atom/.node-gyp
+atom/blob-store
+atom/compile-cache
+atom/dev
+atom/packages
+atom/storage

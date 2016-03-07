@@ -8,16 +8,27 @@
  * http://www.lesscss.org
  */
 
- .tree-view-resizer {
-     width: 300px;
- }
+// Font settings
+// Atom default: Menlo, Consolas, 'DejaVu Sans Mono', monospace
+atom-text-editor {
+    font-family: 'Operator Mono', 'Input Mono', 'Menlo', monospace;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.3;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.tree-view-resizer {
+    width: 300px;
+}
 
 .tree-view {
 
 }
 
 // fix gutter width if git-diff displays icons
-atom-text-editor .gutter.git-diff-icon .line-number, atom-text-editor::shadow .gutter.git-diff-icon .line-number {
+atom-text-editor .gutter.git-diff-icon .line-number,
+atom-text-editor::shadow .gutter.git-diff-icon .line-number {
   padding-left: 0;
 }
 
