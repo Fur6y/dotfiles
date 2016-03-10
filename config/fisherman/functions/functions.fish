@@ -21,8 +21,11 @@ function update_gem --description "update gem"
     sudo gem update --no-rdoc --no-ri
 end
 
-function update_omf --description "update oh-my-fish"
-    omf update
+function update_fisher --description "update fisherman"
+    # update fisherman
+    fisher update
+    # Update all the plugins in the cache concurrently
+    fisher list --bare | xargs -n1 -P3 fish -c "fisher update -"
 end
 
 function update_brew --description "update homebrew apps"
@@ -66,7 +69,7 @@ function update_all --description "update all"
     update_osx
     update_npm
     update_gem
-    update_omf
+    update_fisher
     update_brew
     update_brew_cask
 end

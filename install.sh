@@ -9,7 +9,7 @@
 dot_dir=$(pwd) # dotfiles directory
 home_dir=$HOME # home directory
 backup_dir=$dot_dir/backup # dotfiles backup directory
-files="atom bash_profile config/omf gitconfig vim vimrc" # list of files/folders in homedir
+files="atom bash_profile config/fish config/fisherman gitconfig vim vimrc" # list of files/folders in homedir
 ##########
 
 # create backup directory
@@ -47,13 +47,10 @@ else
     echo "Skip gitconfig.private file creation because file already exists"
 fi
 
-# set path to oh-my-fish configuration
-set -g OMF_CONFIG $HOME/.config/omf
-
 # create private fish config file
-if [ ! -f $dot_dir/omf/init.private.fish ]; then
-    echo "Create init.private.fish file"
-    echo "# Add your private fish config here" >> $dot_dir/omf/init.private.fish
+if [ ! -f $dot_dir/config/fish/config.private.fish ]; then
+    echo "Create config.private.fish file"
+    echo "# Add your private fish config here" >> $dot_dir/config/fish/config.private.fish
 else
-    echo "Skip init.private.fish file creation because file already exists"
+    echo "Skip config.private.fish file creation because file already exists"
 fi

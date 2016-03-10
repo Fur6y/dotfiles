@@ -1,7 +1,14 @@
+##### FISHERMAN #####
+set fisher_home ~/.local/share/fisherman
+set fisher_config ~/.config/fisherman
+source $fisher_home/config.fish
+
+
 ##### FISH #####
 # delete fish welcome message
 set -e fish_greeting
-
+# path to dotfiles
+set -xg DOTFILES $HOME/dotfiles
 
 ##### EXPORTS #####
 # language default
@@ -62,4 +69,4 @@ alias showfiles="defaults write com.apple.finder AppleShowAllFiles YES; killall 
 
 
 ##### PRIVATE #####
-source $OMF_CONFIG/init.private.fish
+source $DOTFILES/config/fish/config.private.fish
