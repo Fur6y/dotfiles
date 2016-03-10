@@ -22,9 +22,7 @@ else
 fi
 
 # change to home directory
-echo -n "Changing to the home directory..."
 cd $home_dir
-echo "done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
@@ -48,9 +46,9 @@ else
 fi
 
 # create private fish config file
-if [ ! -f $dot_dir/config/fish/config.private.fish ]; then
-    echo "Create config.private.fish file"
-    echo "# Add your private fish config here" >> $dot_dir/config/fish/config.private.fish
+if [ ! -f $dot_dir/config/fisherman/conf.d/init.private.fish ]; then
+    echo "Create init.private.fish file"
+    echo "# Add your private fish config here" >> $dot_dir/config/fisherman/conf.d/init.private.fish
 else
-    echo "Skip config.private.fish file creation because file already exists"
+    echo "Skip init.private.fish file creation because file already exists"
 fi
