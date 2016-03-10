@@ -1,3 +1,13 @@
+# homebrew
+function brew_formulae_backup --description "backup the list of installed homebrew formulae"
+    brew list > $DOTFILES/brew/homebrew_formulae.txt
+    brew tap > $DOTFILES/brew/homebrew_taps.txt
+    brew cask list > $DOTFILES/brew/homebrew_cask_formulae.txt
+end
+function brew_formulae_install --description "install all homebrew formulae from backup list"
+    echo not implemented yet
+end
+
 # atom
 function atom_packages_backup --description "backup all installed atom packages"
     apm list --installed --bare --dev false > $ATOM_HOME/packages.txt
