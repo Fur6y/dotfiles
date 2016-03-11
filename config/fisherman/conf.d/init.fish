@@ -5,6 +5,8 @@ set -e fish_greeting
 set -g fish_function_path $fisher_config/my-functions $fish_function_path
 
 ##### EXPORTS #####
+# dotfiles directory
+set -xg DOTFILES $HOME/dotfiles
 # language default
 set -xg LC_ALL en_US.UTF-8
 set -xg LC_CTYPE en_US.UTF-8
@@ -13,7 +15,7 @@ set -xg VISUAL vim
 set -xg EDITOR vim
 set -xg GIT_EDITOR vim
 # atom
-set -xg ATOM_HOME $HOME/dotfiles/atom
+set -xg ATOM_HOME $DOTFILES/atom
 # grep
 set -xg GREP_OPTIONS "--color=auto"
 set -xg GREP_COLOR "1;31" # red
