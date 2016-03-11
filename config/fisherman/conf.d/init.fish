@@ -1,6 +1,8 @@
 ##### FISH #####
 # delete fish welcome message
 set -e fish_greeting
+# add my-functions directory
+set -g fish_function_path $fisher_config/my-functions $fish_function_path
 
 ##### EXPORTS #####
 # language default

@@ -34,7 +34,7 @@ end
 function update_fisher --description "update fisherman"
     # update fisherman
     fisher update
-    # Update all the plugins in the cache concurrently
+    # update all the plugins in the cache concurrently
     fisher list --bare | xargs -n1 -P3 fish -c "fisher update -"
 end
 

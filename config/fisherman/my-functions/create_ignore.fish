@@ -25,7 +25,7 @@ function create_ignore --description "create gitignore file"
 
         # remove first 3 lines
         set -l gitignore (echo $response | tail -n +4)
-        if [ -f .gitignore ]
+        if test -f .gitignore
             # append file
             echo $gitignore >> .gitignore
         else
