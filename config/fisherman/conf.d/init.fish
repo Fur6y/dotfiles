@@ -38,6 +38,7 @@ set -gx BD_OPT 'insensitive'
 
 
 ##### PATH #####
+set -xg PATH $PATH /usr/local/sbin
 # android
 set -xg PATH $PATH $ANDROID_HOME/platform-tools
 set -xg PATH $PATH $ANDROID_HOME/tools
