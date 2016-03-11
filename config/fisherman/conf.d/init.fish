@@ -31,6 +31,8 @@ set -xg MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=512m"
 set -xg JBOSS_HOME /usr/local/opt/jboss-as/libexec
 # graphiz
 set -xg GRAPHVIZ_DOT /usr/local/Cellar/graphviz/2.38.0/bin/dot
+# fisherman plugin 'bd'
+set -gx BD_OPT 'insensitive'
 
 
 ##### PATH #####
