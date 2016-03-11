@@ -40,7 +40,6 @@ atom/storage
 # Fish
 config/fish/*history
 config/fish/fishd*
-config/fisherman/cache
 
 # Misc
 npm-debug.log
