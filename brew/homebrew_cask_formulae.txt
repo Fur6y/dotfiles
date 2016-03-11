@@ -8,7 +8,6 @@ caffeine
 calibre
 clipmenu
 cyberduck
-dash
 deezer
 dockertoolbox
 firefox

@@ -47,7 +47,7 @@ qt
 rails-completion
 rake-completion
 ruby-completion
+unrar
 vagrant-completion
 watchman
-wireshark
 xz

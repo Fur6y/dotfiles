@@ -2,3 +2,4 @@ caskroom/cask
 caskroom/versions
 homebrew/completions
 homebrew/dupes
+homebrew/versions
