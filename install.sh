@@ -37,6 +37,13 @@ for file in $files; do
     fi
 done
 
+# iterm
+# check if file or directory exists and is not a symbolic link
+if [[ ( -d "$home_dir/Library/Application Support/iTerm2" ) && ! -h "$home_dir/Library/Application Support/iTerm2" ]]; then
+    rm -dr "$home_dir/Library/Application Support/iTerm2"
+    ln -s "$dot_dir/iterm" "$home_dir/Library/Application Support/iTerm2"
+done
+
 # create private git config file
 if [ ! -f $dot_dir/gitconfig.private ]; then
     echo "Create gitconfig.private file"
