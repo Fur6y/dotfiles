@@ -21,6 +21,7 @@ set -gx GREP_OPTIONS "--color=auto"
 set -gx GREP_COLOR "1;31" # red
 # java
 set -gx JAVA_HOME (/usr/libexec/java_home)
+set -gx JRE_HOME (/usr/libexec/java_home)
 # android
 set -gx ANDROID_HOME $HOME/Library/Android/sdk
 # ant
@@ -36,10 +37,9 @@ set -gx GRAPHVIZ_DOT /usr/local/Cellar/graphviz/2.38.0/bin/dot
 # fisherman plugin 'bd'
 set -gx BD_OPT 'insensitive'
 # docker
-set -gx DOCKER_TLS_VERIFY "1"
-set -gx DOCKER_HOST "tcp://192.168.99.100:2376"
-set -gx DOCKER_CERT_PATH $HOME/.docker/machine/machines/default
-set -gx DOCKER_MACHINE_NAME "default"
+eval (docker-machine env default --shell fish)
+# node
+set -gx NODE_PATH /usr/local/lib/node_modules
 
 
 ##### PATH #####

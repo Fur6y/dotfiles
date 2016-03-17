@@ -22,8 +22,10 @@ function update_osx --description "update osx"
 end
 
 function update_npm --description "update global npm"
-    npm install npm -g
-    npm update -g
+    sudo npm install -g npm@latest
+    for package in (npm -g outdated --parseable --depth=0 | cut -d: -f2)
+        npm -g install "$package"
+    end
 end
 
 function update_gem --description "update gem"
@@ -39,9 +41,7 @@ function update_fisher --description "update fisherman"
 end
 
 function update_brew --description "update homebrew apps"
-    brew update
-    brew upgrade --all
-    brew cleanup
+    brew update; and brew upgrade --all; and brew cleanup;
 end
 
 function update_brew_cask --description "update homebrew cask apps"
