@@ -39,7 +39,6 @@ lzlib
 maven
 maven-completion
 nettle
-node
 openssl
 pcre
 pkg-config
@@ -47,6 +46,7 @@ qt
 rails-completion
 rake-completion
 ruby-completion
+shellcheck
 unrar
 vagrant-completion
 watchman
