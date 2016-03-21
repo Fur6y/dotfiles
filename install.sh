@@ -22,7 +22,7 @@ else
 fi
 
 # change to home directory
-cd $home_dir
+cd $home_dir || exit 1
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
@@ -42,7 +42,7 @@ done
 if [[ ( -d "$home_dir/Library/Application Support/iTerm2" ) && ! -h "$home_dir/Library/Application Support/iTerm2" ]]; then
     rm -dr "$home_dir/Library/Application Support/iTerm2"
     ln -s "$dot_dir/iterm" "$home_dir/Library/Application Support/iTerm2"
-done
+fi
 
 # create private git config file
 if [ ! -f $dot_dir/gitconfig.private ]; then
