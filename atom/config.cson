@@ -9,6 +9,8 @@
   "atom-beautify":
     _analyticsUserId: "83f70fc5-ac96-41eb-ab18-647ba26ecb9d"
   "atom-color-highlight": {}
+  "auto-update-packages": {}
+  "autocomplete-modules": {}
   "autocomplete-plus": {}
   core:
     customFileTypes:
@@ -56,6 +58,7 @@
     texBin: "/usr/texbin"
   linter:
     showErrorInline: false
+  "linter-chktex": {}
   "linter-coffeelint": {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
@@ -64,6 +67,7 @@
     lintInlineJavaScript: true
   "linter-jsxhint": {}
   "linter-scss-lint": {}
+  "linter-shellcheck": {}
   "markdown-pdf": {}
   "markdown-preview":
     useGitHubStyle: true
@@ -108,7 +112,10 @@
     width: 1440
     x: 0
     y: 23
-  "spell-check": {}
+  "spell-check":
+    grammars: [
+      "text.git-commit"
+    ]
   term2:
     colors: {}
   "terminal-panel": {}
