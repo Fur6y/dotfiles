@@ -1,3 +1,8 @@
+# npm
+function npm_backup --description "backup the list of installed npm packages"
+    npm list -g --depth=0 > $DOTFILES/npm/npm_packages.txt
+end
+
 # homebrew
 function brew_formulae_backup --description "backup the list of installed homebrew formulae"
     brew list > $DOTFILES/brew/homebrew_formulae.txt
