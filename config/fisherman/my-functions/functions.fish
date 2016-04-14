@@ -27,9 +27,13 @@ function update_osx --description "update osx"
 end
 
 function update_npm --description "update global npm"
-    sudo npm install -g npm@latest
-    for package in (npm -g outdated --parseable --depth=0 | cut -d: -f2)
-        npm -g install "$package"
+    npm install -g npm@latest
+    for package_info in (npm -g outdated --parseable --depth=0)
+        set -l package_old (echo $package_info | cut -d: -f2)
+        set -l package_new (echo $package_info | cut -d: -f4)
+        echo "# update $package_old to $package_new"
+        npm -g uninstall "$package_old"
+        npm -g install "$package_new"
     end
 end
 
