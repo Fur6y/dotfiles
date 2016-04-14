@@ -1,3 +1,1 @@
-set -l IFS \t
-
-debug -h | __fisher_complete debug
+/Users/fabian/.config/fisherman/cache/debug/completions/debug.fish
