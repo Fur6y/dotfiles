@@ -49,16 +49,21 @@
     enabled: "true"
   "git-diff":
     showIconsInEditorGutter: true
+  "git-log":
+    fontFamily: "'Operator Mono', 'Input Mono', 'Menlo', monospace"
+    fontScale: 0.8
   "git-projects":
     rootPath: "~/git"
     sortBy: "Latest modification date"
   "highlight-selected": {}
+  jumpy: {}
   latex: {}
   "latex-plus":
     texBin: "/usr/texbin"
   linter:
     showErrorInline: false
-  "linter-chktex": {}
+  "linter-chktex":
+    executablePath: "/Library/TeX/texbin/chktex"
   "linter-coffeelint": {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
@@ -130,6 +135,9 @@
   whitespace:
     ensureSingleTrailingNewline: false
 ".ansi.text":
+  editor:
+    preferredLineLength: 100
+".gradle.groovy.source":
   editor:
     preferredLineLength: 100
 ".hack.html.text":
