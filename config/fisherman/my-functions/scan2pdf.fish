@@ -11,7 +11,7 @@ function scan2pdf --description "scan din a4 page with 300dpi"
     set -l PDF_KEYWORDS "None"
 
     set -l target_file_name $argv[1]
-    set -l device (scanimage -f "%d")
+    set -l device (scanimage -f "%d+++" | string split "+++")[1]
 
     if test -e $target_file_name
         echo "File $target_file_name exists."
