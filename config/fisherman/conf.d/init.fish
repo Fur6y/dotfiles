@@ -8,7 +8,7 @@ set -g fish_function_path $fisher_config/my-functions $fish_function_path
 # dotfiles directory
 set -gx DOTFILES $HOME/dotfiles
 # language default
-set -gx LC_ALL en_US.UTF-8
+set -gx LANG en_US.UTF-8
 set -gx LC_CTYPE en_US.UTF-8
 # editor
 set -gx VISUAL vim
