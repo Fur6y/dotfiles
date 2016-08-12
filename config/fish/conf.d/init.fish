@@ -86,7 +86,9 @@ if [ -d $GRADLE_HOME ]
     set -gx PATH $PATH $GRADLE_HOME/bin
 end
 # jboss
-set -gx PATH $PATH $JBOSS_HOME/bin
+if [ -d $JBOSS_HOME ]
+    set -gx PATH $PATH $JBOSS_HOME/bin
+end
 
 
 ##### ALIASES #####
