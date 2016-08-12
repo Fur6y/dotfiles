@@ -34,3 +34,6 @@
 [submodule "vim/bundle/vim-repeat"]
 	path = vim/bundle/vim-repeat
 	url = git@github.com:tpope/vim-repeat.git
+[submodule "config/fish/functions/fish-title"]
+	path = config/fish/functions/fish-title
+	url = git@github.com:nearengine/fish-title.git
