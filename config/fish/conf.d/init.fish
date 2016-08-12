@@ -4,8 +4,10 @@ set -gx DOTFILES $HOME/dotfiles
 ##### FISH #####
 # delete fish welcome message
 set -e fish_greeting
-# add my-functions directory
+# add my-functions and vendor-functions directory
 set -g fish_function_path $fish_function_path $DOTFILES/config/fish/my-functions
+set -l vendors (find $DOTFILES/config/fish/vendor-functions -name '*.fish')
+for vendor in $vendors; source $vendor; end
 
 ##### EXPORTS #####
 # language default
