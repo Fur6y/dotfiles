@@ -37,3 +37,6 @@
 [submodule "config/fish/functions/fish-title"]
 	path = config/fish/functions/fish-title
 	url = git@github.com:nearengine/fish-title.git
+[submodule "config/fish/vendor-functions/theme-agnoster"]
+	path = config/fish/vendor-functions/theme-agnoster
+	url = git@github.com:oh-my-fish/theme-agnoster.git
