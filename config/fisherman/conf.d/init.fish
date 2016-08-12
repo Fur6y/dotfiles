@@ -42,31 +42,46 @@ set -gx BD_OPT 'insensitive'
 # node
 set -gx NODE_PATH /usr/local/lib/node_modules
 # latex
-set -gx TEXDIR (kpsewhich -var-value TEXDIR) # the main TeX directory
-set -gx TEXMFLOCAL (kpsewhich -var-value TEXMFLOCAL) # directory for site-wide local files
-set -gx TEXMFSYSVAR (kpsewhich -var-value TEXMFSYSVAR) # directory for variable and automatically generated data
-set -gx TEXMFSYSCONFIG (kpsewhich -var-value TEXMFSYSCONFIG) # directory for local config
-set -gx TEXMFVAR (kpsewhich -var-value TEXMFVAR) # personal directory for variable and automatically generated data
-set -gx TEXMFCONFIG (kpsewhich -var-value TEXMFCONFIG) # personal directory for local config
-set -gx TEXMFHOME (kpsewhich -var-value TEXMFHOME) # directory for user-specific files
+if [ ! type kpsewhich 2> /dev/null ]
+    set -gx TEXDIR (kpsewhich -var-value TEXDIR) # the main TeX directory
+    set -gx TEXMFLOCAL (kpsewhich -var-value TEXMFLOCAL) # directory for site-wide local files
+    set -gx TEXMFSYSVAR (kpsewhich -var-value TEXMFSYSVAR) # directory for variable and automatically generated data
+    set -gx TEXMFSYSCONFIG (kpsewhich -var-value TEXMFSYSCONFIG) # directory for local config
+    set -gx TEXMFVAR (kpsewhich -var-value TEXMFVAR) # personal directory for variable and automatically generated data
+    set -gx TEXMFCONFIG (kpsewhich -var-value TEXMFCONFIG) # personal directory for local config
+    set -gx TEXMFHOME (kpsewhich -var-value TEXMFHOME) # directory for user-specific files
+end
 # sane
 set -gx SANE_DEFAULT_DEVICE "net:192.168.178.2:plustek:libusb:001:005"
 # docker
-if [ (docker-machine status) = "Running" ]
-    eval (docker-machine env default --shell fish)
+if [ ! type docker-machine 2> /dev/null ]
+    if [ (docker-machine status) = "Running" ]
+        eval (docker-machine env default --shell fish)
+    end
 end
 
 
 ##### PATH #####
-set -gx PATH $PATH /usr/local/sbin
+if [ -d /usr/local/sbin ]
+    set -gx PATH $PATH /usr/local/sbin
+end
 # android
-set -gx PATH $PATH $ANDROID_HOME/platform-tools
-set -gx PATH $PATH $ANDROID_HOME/tools
-set -gx PATH $PATH $ANDROID_NDK
+if [ -d $ANDROID_HOME ]
+    set -gx PATH $PATH $ANDROID_HOME/platform-tools
+    set -gx PATH $PATH $ANDROID_HOME/tools
+end
+if [ -d $ANDROID_NDK ]
+    set -gx PATH $PATH $ANDROID_NDK
+end
+
 # ant
-set -gx PATH $PATH $ANT_HOME/bin
+if [ -d $ANT_HOME ]
+    set -gx PATH $PATH $ANT_HOME/bin
+end
 # gradle
-set -gx PATH $PATH $GRADLE_HOME/bin
+if [ -d $GRADLE_HOME ]
+    set -gx PATH $PATH $GRADLE_HOME/bin
+end
 # jboss
 set -gx PATH $PATH $JBOSS_HOME/bin
 
