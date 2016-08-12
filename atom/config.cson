@@ -1,5 +1,6 @@
 "*":
   "activate-power-mode":
+    autoToggle: false
     particles:
       size: {}
       spawnCount: {}
@@ -8,6 +9,10 @@
   "atom-alignment": {}
   "atom-beautify":
     _analyticsUserId: "83f70fc5-ac96-41eb-ab18-647ba26ecb9d"
+    general:
+      _analyticsUserId: "4638010e-ab63-4840-b857-c080ee15eb9f"
+    js:
+      space_after_anon_function: true
   "atom-color-highlight": {}
   "auto-update-packages": {}
   "autocomplete-modules": {}
@@ -24,6 +29,9 @@
       "source.python": [
         "BUCK"
       ]
+    disabledPackages: [
+      "activate-power-mode"
+    ]
     projectHome: "~/git/"
     themes: [
       "atom-dark-ui"
@@ -31,6 +39,7 @@
     ]
   editor:
     backUpBeforeSaving: true
+    fontSize: 16
     invisibles: {}
     lineHeight: 1.4
     preferredLineLength: 100
@@ -71,7 +80,8 @@
     disableWhenNoJshintrcFileInPath: true
     lintInlineJavaScript: true
   "linter-jsxhint": {}
-  "linter-scss-lint": {}
+  "linter-scss-lint":
+    disableWhenNoConfigFileInPath: true
   "linter-shellcheck": {}
   "markdown-pdf": {}
   "markdown-preview":
@@ -137,6 +147,10 @@
 ".ansi.text":
   editor:
     preferredLineLength: 100
+".attribute-values.js.jsx.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
 ".gradle.groovy.source":
   editor:
     preferredLineLength: 100
@@ -149,6 +163,18 @@
 ".ini.source":
   editor:
     preferredLineLength: 100
+".js.jsx.react.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".js.source.subtlegradient":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
 ".plain.text":
   editor:
     preferredLineLength: 100

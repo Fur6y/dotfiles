@@ -4,7 +4,7 @@
 
 ## Install
 
-- run 'install.sh'
+-   run 'install.sh'
 
 ## Aliases
 
@@ -15,3 +15,8 @@ ip              # print local ip address
 nl              # print list of all local top level npm dependencies
 ng              # print list of all global top level npm dependencies
 ```
+
+## Directories
+
+-   Homebrew Cask Install: /opt/homebrew-cask/Caskroom/
+-   Homebrew Cask Formulaes: /usr/local/Library/Taps/caskroom/homebrew-cask/Casks/
