@@ -1,12 +1,13 @@
+##### DOTFILES #####
+set -gx DOTFILES $HOME/dotfiles
+
 ##### FISH #####
 # delete fish welcome message
 set -e fish_greeting
 # add my-functions directory
-set -g fish_function_path $fisher_config/my-functions $fish_function_path
+set -g fish_function_path $fish_function_path $DOTFILES/config/fish/my-functions
 
 ##### EXPORTS #####
-# dotfiles directory
-set -gx DOTFILES $HOME/dotfiles
 # language default
 set -gx LANG en_US.UTF-8
 set -gx LC_CTYPE en_US.UTF-8
@@ -22,7 +23,7 @@ set -gx GREP_COLOR "1;31" # red
 # java
 set -l java7 "1.7.0_71"
 set -l java8 "1.8.0_102"
-set -gx JAVA_HOME (/usr/libexec/java_home -v $java7)
+set -gx JAVA_HOME (/usr/libexec/java_home)
 set -gx JRE_HOME (/usr/libexec/java_home)
 # android
 set -gx ANDROID_HOME $HOME/Library/Android/sdk

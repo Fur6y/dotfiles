@@ -1,1 +1,0 @@
-/Users/fabian/.config/fisherman/cache/debug/completions/debug.fish
