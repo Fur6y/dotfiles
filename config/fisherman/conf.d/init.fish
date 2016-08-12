@@ -20,7 +20,9 @@ set -gx ATOM_HOME $DOTFILES/atom
 set -gx GREP_OPTIONS "--color=auto"
 set -gx GREP_COLOR "1;31" # red
 # java
-set -gx JAVA_HOME (/usr/libexec/java_home)
+set -l java7 "1.7.0_71"
+set -l java8 "1.8.0_102"
+set -gx JAVA_HOME (/usr/libexec/java_home -v $java7)
 set -gx JRE_HOME (/usr/libexec/java_home)
 # android
 set -gx ANDROID_HOME $HOME/Library/Android/sdk
