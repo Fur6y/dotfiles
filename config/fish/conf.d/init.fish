@@ -19,6 +19,11 @@ set -gx LC_CTYPE en_US.UTF-8
 set -gx VISUAL vim
 set -gx EDITOR vim
 set -gx GIT_EDITOR vim
+# man
+if test "$MANPATH" = ""
+    set -gx MANPATH (manpath | string split :)
+end
+set -gx MANPATH $MANPATH $DOTFILES/config/fish/man
 # atom
 set -gx ATOM_HOME $DOTFILES/atom
 # grep
