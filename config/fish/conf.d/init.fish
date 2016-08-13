@@ -7,7 +7,9 @@ set -e fish_greeting
 # add my-functions and vendor-functions directory
 set -g fish_function_path $fish_function_path $DOTFILES/config/fish/my-functions
 set -l vendors (find $DOTFILES/config/fish/vendor-functions -name '*.fish')
-for vendor in $vendors; source $vendor; end
+for vendor in $vendors
+    source $vendor
+end
 
 ##### EXPORTS #####
 # language default
@@ -47,7 +49,7 @@ set -gx BD_OPT 'insensitive'
 # node
 set -gx NODE_PATH /usr/local/lib/node_modules
 # latex
-if [ ! type kpsewhich 2> /dev/null ]
+if type --quiet "kpsewhich"
     set -gx TEXDIR (kpsewhich -var-value TEXDIR) # the main TeX directory
     set -gx TEXMFLOCAL (kpsewhich -var-value TEXMFLOCAL) # directory for site-wide local files
     set -gx TEXMFSYSVAR (kpsewhich -var-value TEXMFSYSVAR) # directory for variable and automatically generated data
@@ -59,36 +61,34 @@ end
 # sane
 set -gx SANE_DEFAULT_DEVICE "net:192.168.178.2:plustek:libusb:001:005"
 # docker
-if [ ! type docker-machine 2> /dev/null ]
-    if [ (docker-machine status) = "Running" ]
+if type --quiet "docker-machine"
+    if test (docker-machine status) = "Running"
         eval (docker-machine env default --shell fish)
     end
 end
 
 
 ##### PATH #####
-if [ -d /usr/local/sbin ]
+if test -d /usr/local/sbin
     set -gx PATH $PATH /usr/local/sbin
 end
 # android
-if [ -d $ANDROID_HOME ]
+if test -d $ANDROID_HOME
     set -gx PATH $PATH $ANDROID_HOME/platform-tools
     set -gx PATH $PATH $ANDROID_HOME/tools
 end
-if [ -d $ANDROID_NDK ]
-    set -gx PATH $PATH $ANDROID_NDK
-end
+if test -d $ANDROID_NDK; set -gx PATH $PATH $ANDROID_NDK; end
 
 # ant
-if [ -d $ANT_HOME ]
+if test -d $ANT_HOME
     set -gx PATH $PATH $ANT_HOME/bin
 end
 # gradle
-if [ -d $GRADLE_HOME ]
+if test -d $GRADLE_HOME
     set -gx PATH $PATH $GRADLE_HOME/bin
 end
 # jboss
-if [ -d $JBOSS_HOME ]
+if test -d $JBOSS_HOME
     set -gx PATH $PATH $JBOSS_HOME/bin
 end
 
