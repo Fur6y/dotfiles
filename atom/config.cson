@@ -85,6 +85,7 @@
   "linter-shellcheck": {}
   "markdown-pdf": {}
   "markdown-preview":
+    breakOnSingleNewline: true
     useGitHubStyle: true
   nuclide:
     "nuclide-arcanist": {}
