@@ -36,6 +36,7 @@ atom/compile-cache
 atom/dev
 atom/packages
 atom/storage
+atom/recovery
 
 # Fish
 config/fish/*history
