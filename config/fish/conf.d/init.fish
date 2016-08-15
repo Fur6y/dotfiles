@@ -48,7 +48,7 @@ set -gx JBOSS_HOME /usr/local/opt/jboss-as/libexec
 # graphiz
 set -gx GRAPHVIZ_DOT /usr/local/Cellar/graphviz/2.38.0/bin/dot
 # fisherman plugin 'bd'
-set -gx BD_OPT 'insensitive'
+set -gx BD_OPT "insensitive"
 # node
 set -gx NODE_PATH /usr/local/lib/node_modules
 # latex
@@ -69,6 +69,10 @@ if type --quiet "docker-machine"
         eval (docker-machine env default --shell fish)
     end
 end
+# qivicon emulator
+set -gx VM_DEBUG "Y"
+set -gx VM_DEBUG_PORT "8000"
+# set -gx VM_DEBUG_SUSPEND "Y"
 
 
 ##### PATH #####
