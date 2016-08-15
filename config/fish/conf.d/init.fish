@@ -98,6 +98,10 @@ end
 if test -d $JBOSS_HOME
     set -gx PATH $PATH $JBOSS_HOME/bin
 end
+# npm
+if test -d $HOME/.node_modules/bin
+    set -gx PATH $PATH $HOME/.node_modules/bin
+end
 
 
 ##### ALIASES #####
