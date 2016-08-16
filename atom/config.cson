@@ -42,7 +42,7 @@
     fontSize: 16
     invisibles: {}
     lineHeight: 1.4
-    preferredLineLength: 120
+    preferredLineLength: 100
     scrollPastEnd: true
     showIndentGuide: true
     tabLength: 4
@@ -163,7 +163,8 @@
     preferredLineLength: 100
 ".ini.source":
   editor:
-    preferredLineLength: 100
+    preferredLineLength: 120
+    tabLength: 4
 ".js.jsx.react.source":
   editor:
     preferredLineLength: 100
