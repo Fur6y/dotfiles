@@ -4,11 +4,17 @@
 
 ## Install
 
--   run 'install.sh'
+```shell
+cd ~/dotfiles && npm i
+ln -s ~/dotfiles/npm/npmrc ~/.npmrc
+ln -s ~/dotfiles/.eslintrc ~/.eslintrc
+ln -s ~/dotfiles/.remarkrc ~/.remarkrc
+./install.sh
+```
 
 ## Aliases
 
-```
+```shell
 update_all      # runs update for osx, brew, brew cask, npm, gem
 ipglobal        # print global ip address
 ip              # print local ip address
