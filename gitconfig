@@ -1,29 +1,30 @@
 [include]
-	path = ~/dotfiles/gitconfig.private
+    path = ~/dotfiles/gitconfig.private
 [alias]
     # git-number, see: https://github.com/holygeek/git-number
     st = number -s
     a = number add
     r = number reset
-	co = number checkout
-	nrm = number rm
-	ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --numstat
-	ld = log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=short --graph
-	ls = log --pretty=format:%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=relative
-	ltag = "!git log --oneline --decorate=short | awk '/tag/ {print substr($3,0,(length($3)-1)) \"\\t\" $1 \"\\t\" ($1=$2=$3=\"\") $0}'"
-	undo = reset --soft 'HEAD^'
-	redo = commit -c ORIG_HEAD
-	ss = stash save --include-untracked
-	ba = branch -avv
+    co = number checkout
+    nrm = number rm
+    d = number diff
+    ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --numstat
+    ld = log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=short --graph
+    ls = log --pretty=format:%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=relative
+    ltag = "!git log --oneline --decorate=short | awk '/tag/ {print substr($3,0,(length($3)-1)) \"\\t\" $1 \"\\t\" ($1=$2=$3=\"\") $0}'"
+    undo = reset --soft 'HEAD^'
+    redo = commit -c ORIG_HEAD
+    ss = stash save --include-untracked
+    ba = branch -avv
 [push]
-	default = simple
+    default = simple
 [core]
-	editor = vim
-	excludesfile = /Users/fabian/.gitignore_global
+    editor = vim
+    excludesfile = /Users/fabian/.gitignore_global
 [merge]
-	tool = kdiff3
-	ff = true
+    tool = kdiff3
+    ff = true
 [fetch]
-	prune = true
+    prune = true
 [remote "origin"]
-	prune = true
+    prune = true
