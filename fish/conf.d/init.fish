@@ -5,8 +5,8 @@ set -gx DOTFILES $HOME/dotfiles
 # delete fish welcome message
 set -e fish_greeting
 # add my-functions and vendor-functions directory
-set -g fish_function_path $fish_function_path $DOTFILES/config/fish/my-functions
-set -l vendors (find $DOTFILES/config/fish/vendor-functions -name '*.fish')
+set -g fish_function_path $fish_function_path $DOTFILES/fish/my-functions
+set -l vendors (find $DOTFILES/fish/vendor-functions -name '*.fish')
 for vendor in $vendors
     source $vendor
 end
@@ -23,7 +23,7 @@ set -gx GIT_EDITOR vim
 if test "$MANPATH" = ""
     set -gx MANPATH (manpath | string split :)
 end
-set -gx MANPATH $MANPATH $DOTFILES/config/fish/man
+set -gx MANPATH $MANPATH $DOTFILES/fish/man
 # atom
 set -gx ATOM_HOME $DOTFILES/atom
 # grep
