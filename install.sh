@@ -9,7 +9,7 @@
 dot_dir=$(pwd) # dotfiles directory
 home_dir=$HOME # home directory
 backup_dir=$dot_dir/backup # dotfiles backup directory
-files="atom bash_profile config/fish config/fisherman gitconfig vim vimrc" # list of files/folders in homedir
+files="atom bash_profile gitconfig vim vimrc" # list of files/folders in homedir
 ##########
 
 # create backup directory

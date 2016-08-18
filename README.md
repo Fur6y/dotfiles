@@ -9,6 +9,7 @@ cd ~/dotfiles && npm i
 ln -s ~/dotfiles/npm/npmrc ~/.npmrc
 ln -s ~/dotfiles/.eslintrc ~/.eslintrc
 ln -s ~/dotfiles/.remarkrc ~/.remarkrc
+ln -s ~/dotfiles/fish ~/.config/fish
 ./install.sh
 ```
 

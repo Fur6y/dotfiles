@@ -39,8 +39,8 @@ atom/storage
 atom/recovery
 
 # Fish
-config/fish/*history
-config/fish/fishd*
+fish/*history
+fish/fishd*
 
 # Misc
 npm-debug.log
