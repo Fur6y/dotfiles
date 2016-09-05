@@ -80,6 +80,8 @@
     disableWhenNoJshintrcFileInPath: true
     lintInlineJavaScript: true
   "linter-jsxhint": {}
+  "linter-pep8":
+    maxLineLength: 120
   "linter-scss-lint":
     disableWhenNoConfigFileInPath: true
   "linter-shellcheck": {}
