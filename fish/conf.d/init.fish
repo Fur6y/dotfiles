@@ -42,9 +42,9 @@ set -gx ANT_OPTS "-Xmx512M"
 set -gx GRADLE_HOME /opt/homebrew-cask/Caskroom/android-studio/1.4.0.10/Android\ Studio.app/Contents/gradle/gradle-2.8
 # maven
 set -gx M3_HOME /usr/local/Cellar/maven/3.3.9
-set -gx MAVEN_OPTS "-Xms512m -Xmx1024m"
+set -gx MAVEN_OPTS "-Xms1024m -Xmx4096m -XX:PermSize=1024m"
 # jboss
-set -gx JBOSS_HOME /usr/local/opt/jboss-as/libexec
+set -gx JBOSS_HOME /opt/jboss7/
 # graphiz
 set -gx GRAPHVIZ_DOT /usr/local/Cellar/graphviz/2.38.0/bin/dot
 # fisherman plugin 'bd'
