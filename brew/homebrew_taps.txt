@@ -1,5 +1,10 @@
-caskroom/cask
-caskroom/versions
+homebrew/core
+homebrew/boneyard
 homebrew/completions
 homebrew/dupes
+homebrew/gui
+homebrew/services
 homebrew/versions
+caskroom/cask
+caskroom/versions
+fur6y/cask-tap
