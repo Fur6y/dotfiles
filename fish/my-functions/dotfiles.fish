@@ -1,3 +1,3 @@
 function dotfiles --description "edit dotfiles"
-    atom $DOTFILES;
+    code $DOTFILES;
 end
