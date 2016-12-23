@@ -18,7 +18,7 @@
     r = number reset
     co = number checkout
     d = number diff
-    nrm = number rmtrash
+    nrm = number -c rmtrash
     d = number diff
 [push]
     default = simple

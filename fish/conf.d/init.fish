@@ -44,7 +44,7 @@ set -gx GRADLE_HOME /opt/homebrew-cask/Caskroom/android-studio/1.4.0.10/Android\
 set -gx M3_HOME /usr/local/Cellar/maven/3.3.9
 set -gx MAVEN_OPTS "-Xms1024m -Xmx4096m -XX:PermSize=1024m"
 # jboss
-set -gx JBOSS_HOME /opt/jboss7/
+set -gx JBOSS_HOME /opt/wildfly10/
 # graphiz
 set -gx GRAPHVIZ_DOT /usr/local/Cellar/graphviz/2.38.0/bin/dot
 # fisherman plugin 'bd'
@@ -71,7 +71,7 @@ if type --quiet "docker-machine"
 end
 # qivicon emulator
 set -gx VM_DEBUG "Y"
-set -gx VM_DEBUG_PORT "8000"
+# set -gx VM_DEBUG_PORT "8000"
 # set -gx VM_DEBUG_SUSPEND "Y"
 
 
@@ -106,7 +106,7 @@ end
 
 ##### ALIASES #####
 # git number
-alias nrm "git number -c rm -di"
+alias nrm "git number -c rmtrash"
 # ip addresses
 alias ipglobal "dig +short myip.opendns.com @resolver1.opendns.com"
 alias ip "ifconfig | grep -o '\inet\s[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.*broadcast' | grep -o '[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}'"
