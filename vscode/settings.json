@@ -1,0 +1,8 @@
+// Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
+{
+    "workbench.sideBar.location": "right",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.statusBar.visible": true,
+    "editor.rulers": [120],
+    "editor.renderWhitespace": "boundary"
+}

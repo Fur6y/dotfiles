@@ -1,0 +1,22 @@
+// Platzieren Sie Ihre Tastenzuordnungen in dieser Datei, um die Standardwerte zu überschreiben.
+[
+    {
+        "key": "cmd+e",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+d",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+7",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    }
+]

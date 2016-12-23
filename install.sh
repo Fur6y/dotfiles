@@ -44,6 +44,17 @@ if [[ ( -d "$home_dir/Library/Application Support/iTerm2" ) && ! -h "$home_dir/L
     ln -s "$dot_dir/iterm" "$home_dir/Library/Application Support/iTerm2"
 fi
 
+# vscode
+# check if file or directory exists and is not a symbolic link
+if [[ ( -d "$home_dir/Library/Application Support/Code/User" ) && ! -h "$home_dir/Library/Application Support/Code/User/settings.json" ]]; then
+    rm "$home_dir/Library/Application Support/Code/User/settings.json"
+    rm "$home_dir/Library/Application Support/Code/User/keybindings.json"
+    rm -rf "$home_dir/Library/Application Support/Code/User/snippets"
+    ln -s "$dot_dir/iterm" "$home_dir/Library/Application Support/iTerm2"
+    ln -s "$dot_dir/vscode/settings.json" "$home_dir/Library/Application Support/Code/User/settings.json"
+    ln -s "$dot_dir/vscode/snippets" "$home_dir/Library/Application Support/Code/User/snippets"
+fi
+
 # create private git config file
 if [ ! -f $dot_dir/gitconfig.private ]; then
     echo "Create gitconfig.private file"
