@@ -127,3 +127,5 @@ alias json "python -m json.tool"
 alias vars "set -xg"
 # android
 alias nex5 "emulator -avd Nex5 -gpu on -no-boot-anim -netdelay none -netspeed full -scale 0.35"
+# vscode
+alias code "code --user-data-dir $DOTFILES/vscode"
