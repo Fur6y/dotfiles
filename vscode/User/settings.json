@@ -4,5 +4,6 @@
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.statusBar.visible": true,
     "editor.rulers": [120],
-    "editor.renderWhitespace": "boundary"
+    "editor.renderWhitespace": "boundary",
+    "workbench.editor.enablePreview": false
 }

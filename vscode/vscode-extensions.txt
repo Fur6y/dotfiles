@@ -23,9 +23,12 @@ ilich8086.Untabify
 joelday.docthis
 michelemelluso.code-beautifier
 msjsdiag.debugger-for-chrome
+qinjia.seti-icons
 robertohuertasm.vscode-icons
 robinbentley.sass-indented
 ryu1kn.partial-diff
+vilicvane.es-quotes
 waderyan.gitblame
+xabikos.JasmineSnippets
 xabikos.JavaScriptSnippets
 yuichinukiyama.TabSpacer

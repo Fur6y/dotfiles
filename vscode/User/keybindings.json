@@ -18,5 +18,10 @@
         "key": "cmd+7",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "esQuotes.transformBetweenSingleDoubleQuotes",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
