@@ -26,10 +26,17 @@
     editor = vim
     excludesfile = /Users/fabian/.gitignore_global
     pager = diff-so-fancy | less --tabs=4 -RFX
-[merge]
-    tool = kdiff3
-    ff = true
 [fetch]
     prune = true
 [remote "origin"]
     prune = true
+[merge]
+    tool = opendiff
+    ff = true
+[diff]
+    tool = opendiff
+[mergetool "opendiff"]
+    keepBackup = false
+    trustExitCode = false
+[commit]
+    verbose = true
