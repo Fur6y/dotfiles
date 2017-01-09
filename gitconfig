@@ -1,42 +1,42 @@
 [include]
-    path = ~/dotfiles/gitconfig.private
+	path = ~/dotfiles/gitconfig.private
 [alias]
-    ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --numstat
-    ld = log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --graph --date=format:\"%a %d.%m.%y %H:%M\"
-    ls = log --pretty=format:%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=relative
-    ltag = "!git log --oneline --decorate=short | awk '/\\(tag:/ {print substr($3,0,(length($3)-1)) \"\\t\\t\\t\" $1 \"\\t\" ($1=$2=$3=\"\") $0}'"
-    graph = "!git ld" # alias
-    undo = reset --soft 'HEAD^'
-    redo = commit -c ORIG_HEAD
-    ss = stash save --include-untracked
-    ba = branch -avv
-    showfiles = diff-tree --no-commit-id --name-only -r
-    find = log --all --grep
-    # git-number, see: https://github.com/holygeek/git-number
-    st = number -s
-    a = number add
-    r = number reset
-    co = number checkout
-    d = number diff
-    nrm = number -c rmtrash
-    d = number diff
+	ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --numstat
+	ld = log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --graph --date=format:\"%a %d.%m.%y %H:%M\"
+	ls = log --pretty=format:%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=relative
+	ltag = "!git log --oneline --decorate=short | awk '/\\(tag:/ {print substr($3,0,(length($3)-1)) \"\\t\\t\\t\" $1 \"\\t\" ($1=$2=$3=\"\") $0}'"
+	graph = "!git ld" # alias
+	undo = reset --soft 'HEAD^'
+	redo = commit -c ORIG_HEAD
+	ss = stash save --include-untracked
+	ba = branch -avv
+	showfiles = diff-tree --no-commit-id --name-only -r
+	find = log --all --grep
+	# git-number, see: https://github.com/holygeek/git-number
+	st = number -s
+	a = number add
+	r = number reset
+	co = number checkout
+	d = number diff
+	nrm = number -c rmtrash
+	d = number diff
 [push]
-    default = simple
+	default = simple
 [core]
-    editor = vim
-    excludesfile = /Users/fabian/.gitignore_global
-    pager = diff-so-fancy | less --tabs=4 -RFX
+	editor = vim
+	excludesfile = /Users/fabian/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [fetch]
-    prune = true
+	prune = true
 [remote "origin"]
-    prune = true
+	prune = true
 [merge]
-    tool = opendiff
-    ff = true
+	tool = opendiff
+	ff = true
 [diff]
-    tool = opendiff
+	tool = opendiff
 [mergetool "opendiff"]
-    keepBackup = false
-    trustExitCode = false
+	keepBackup = false
+	trustExitCode = false
 [commit]
-    verbose = true
+	verbose = true
