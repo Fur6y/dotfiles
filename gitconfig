@@ -35,6 +35,7 @@
 	ff = true
 [diff]
 	tool = opendiff
+	indentHeuristic = true
 [mergetool "opendiff"]
 	keepBackup = false
 	trustExitCode = false
