@@ -688,7 +688,7 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/Users/fetting_f/Desktop/SVG"
+       path="~/"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -699,7 +699,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/Users/fetting_f/Desktop/SVG/" />
+       path="~/" />
     <group
        id="import"
        enable_preview="1"
