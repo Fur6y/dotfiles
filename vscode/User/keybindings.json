@@ -23,5 +23,9 @@
         "key": "shift+cmd+\\",
         "command": "esQuotes.transformBetweenSingleDoubleQuotes",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.tasks.build"
     }
 ]
