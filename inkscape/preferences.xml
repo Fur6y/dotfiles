@@ -133,8 +133,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="0"
-         height="0"
+         width="500"
+         height="1000"
          rx="0"
          ry="0" />
       <eventcontext
@@ -421,6 +421,7 @@
        offsetunits="pt"
        threshold="5" />
     <group
+       unit="px"
        fontsize="10"
        id="measure" />
   </group>
@@ -557,7 +558,20 @@
     <group
        id="toolbox" />
     <group
-       id="fillstroke" />
+       id="fillstroke"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       page="0"
+       x="0"
+       y="0"
+       w="326"
+       h="422"
+       visible="1"
+       state="2"
+       placement="5" />
     <group
        id="filtereffects" />
     <group
@@ -573,13 +587,27 @@
        rotateCounterClockwise="1"
        x="0"
        y="0"
-       w="345"
-       h="170"
+       w="326"
+       h="422"
        visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
     <group
-       id="align" />
+       id="align"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       align-to="4"
+       x="0"
+       y="0"
+       w="326"
+       h="422"
+       visible="1"
+       state="2"
+       placement="5"
+       sel-as-groups="1" />
     <group
        id="xml"
        panel_size="1"
@@ -589,7 +617,7 @@
        panel_border="0"
        x="0"
        y="0"
-       w="345"
+       w="328"
        h="266"
        visible="1"
        state="2"
@@ -610,10 +638,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="2137"
-       y="247"
-       w="522"
-       h="679"
+       x="1280"
+       y="0"
+       w="466"
+       h="521"
        visible="0"
        placement="1" />
     <group
@@ -624,15 +652,27 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="43"
-       x="2007"
-       y="286"
-       w="785"
-       h="627" />
+       page="26"
+       x="1847"
+       y="306"
+       w="879"
+       h="739" />
     <group
        id="gradienteditor" />
     <group
-       id="object" />
+       id="object"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="0"
+       y="0"
+       w="326"
+       h="422"
+       visible="1"
+       state="2"
+       placement="5" />
     <group
        id="export"
        default=""
@@ -712,11 +752,11 @@
        panel_border="0"
        x="0"
        y="0"
-       w="250"
-       h="101"
-       visible="0"
+       w="326"
+       h="422"
+       visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
     <group
        id="filtereffects" />
     <group
@@ -866,6 +906,9 @@
        id="dialogsskiptaskbar"
        value="1" />
     <group
+       id="defaultwindowsize"
+       value="0" />
+    <group
        id="arenatilescachesize"
        value="8192" />
     <group
@@ -1014,8 +1057,9 @@
     <group
        id="rendering" />
     <group
-       id="defaultwindowsize"
-       value="0" />
+       id="kbshortcuts"
+       value="undo"
+       shortcutfile="Contents/Resources/share/inkscape/keys/adobe-illustrator-cs2.xml" />
   </group>
   <group
      id="extensions" />
@@ -1023,10 +1067,10 @@
      id="desktop"
      style="fill:#000000">
     <group
-       width="1920"
-       height="1151"
-       x="1440"
-       y="23"
+       width="1694"
+       height="971"
+       x="1391"
+       y="45"
        fullscreen="0"
        id="geometry"
        maximized="0" />
