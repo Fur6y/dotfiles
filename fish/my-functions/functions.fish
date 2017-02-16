@@ -13,14 +13,6 @@ function brew_formulae_install --description "install all homebrew formulae from
     echo not implemented yet
 end
 
-# atom
-function atom_packages_backup --description "backup all installed atom packages"
-    apm list --installed --bare --dev false > $ATOM_HOME/packages.txt
-end
-function atom_packages_install --description "install all atom packages from backup list"
-    apm install --packages-file $ATOM_HOME/packages.txt
-end
-
 # update functions
 function update_osx --description "update osx"
     sudo softwareupdate -i -a $argv

@@ -28,16 +28,6 @@ Temporary Items
 # Vim
 vim/undo
 
-# Atom editor
-atom/.apm
-atom/.node-gyp
-atom/blob-store
-atom/compile-cache
-atom/dev
-atom/packages
-atom/storage
-atom/recovery
-
 # Fish
 fish/*history
 fish/fishd*

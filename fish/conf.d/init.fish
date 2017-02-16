@@ -24,8 +24,6 @@ if test "$MANPATH" = ""
     set -gx MANPATH (manpath | string split :)
 end
 set -gx MANPATH $MANPATH $DOTFILES/fish/man
-# atom
-set -gx ATOM_HOME $DOTFILES/atom
 # grep
 set -gx GREP_OPTIONS "--color=auto"
 set -gx GREP_COLOR "1;31" # red
