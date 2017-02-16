@@ -39,7 +39,7 @@ set -gx ANDROID_NDK $ANDROID_HOME/ndk-bundle
 set -gx ANT_HOME /usr/share/ant
 set -gx ANT_OPTS "-Xmx512M"
 # gradle
-set -gx GRADLE_HOME /opt/homebrew-cask/Caskroom/android-studio/1.4.0.10/Android\ Studio.app/Contents/gradle/gradle-2.8
+set -gx GRADLE_HOME /Applications/Android\ Studio.app/Contents/gradle/gradle-2.14.1
 # maven
 set -gx M3_HOME /usr/local/Cellar/maven/3.3.9
 set -gx MAVEN_OPTS "-Xms1024m -Xmx4096m -XX:PermSize=1024m"
@@ -50,7 +50,7 @@ set -gx GRAPHVIZ_DOT /usr/local/Cellar/graphviz/2.38.0/bin/dot
 # fisherman plugin 'bd'
 set -gx BD_OPT "insensitive"
 # node
-set -gx NODE_PATH /usr/local/lib/node_modules
+set -gx NODE_PATH $HOME/.node_modules
 # latex
 if type --quiet "kpsewhich"
     set -gx TEXDIR (kpsewhich -var-value TEXDIR) # the main TeX directory
@@ -99,8 +99,8 @@ if test -d $JBOSS_HOME
     set -gx PATH $PATH $JBOSS_HOME/bin
 end
 # npm
-if test -d $HOME/.node_modules/bin
-    set -gx PATH $PATH $HOME/.node_modules/bin
+if test -d $NODE_PATH/bin
+    set -gx PATH $PATH $NODE_PATH/bin
 end
 
 
@@ -129,3 +129,5 @@ alias vars "set -xg"
 alias nex5 "emulator -avd Nex5 -gpu on -no-boot-anim -netdelay none -netspeed full -scale 0.35"
 # vscode
 alias code "code --user-data-dir $DOTFILES/vscode"
+# grunt
+alias g "grunt"
