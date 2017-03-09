@@ -8,5 +8,7 @@
     "editor.rulers": [120],
     "editor.renderWhitespace": "boundary",
     "workbench.editor.enablePreview": false,
-    "editor.wrappingColumn": 160
+    "editor.wordWrap": 160,
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "seti"
 }
