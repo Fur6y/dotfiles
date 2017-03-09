@@ -20,6 +20,7 @@
 	d = number diff
 	nrm = number -c rmtrash
 	d = number diff
+	b = number -c fish $DOTFILES/git/git-blame-colored.fish
 [push]
 	default = simple
 [core]
