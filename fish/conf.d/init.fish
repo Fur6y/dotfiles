@@ -2,8 +2,8 @@
 set -gx DOTFILES $HOME/dotfiles
 
 ##### FISH #####
-# delete fish welcome message
-set -e fish_greeting
+# settings for fish theme "bobthefish"
+set -gx theme_nerd_fonts yes
 # add my-functions and vendor-functions directory
 set -g fish_function_path $fish_function_path $DOTFILES/fish/my-functions
 set -l vendors (find $DOTFILES/fish/vendor-functions -name '*.fish')
