@@ -3,7 +3,7 @@ set -gx DOTFILES $HOME/dotfiles
 
 ##### FISH #####
 # settings for fish theme "bobthefish"
-set -gx theme_nerd_fonts yes
+set -gx theme_color_scheme user
 # add my-functions and vendor-functions directory
 set -g fish_function_path $fish_function_path $DOTFILES/fish/my-functions
 set -l vendors (find $DOTFILES/fish/vendor-functions -name '*.fish')
@@ -13,8 +13,11 @@ end
 
 ##### EXPORTS #####
 # language default
-set -gx LANG en_US.UTF-8
+set -gx LANGUAGE en_US.UTF-8
+set -gx LC_ALL en_US.UTF-8
 set -gx LC_CTYPE en_US.UTF-8
+set -gx LANG en_US.UTF-8
+
 # editor
 set -gx VISUAL vim
 set -gx EDITOR vim
