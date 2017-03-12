@@ -2,6 +2,7 @@
 {
     "editor.fontSize": 13,
     "editor.lineHeight": 18,
+    "editor.snippetSuggestions": "top",
     "workbench.sideBar.location": "right",
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.statusBar.visible": true,
