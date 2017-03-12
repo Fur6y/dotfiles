@@ -11,5 +11,11 @@
     "workbench.editor.enablePreview": false,
     "editor.wordWrap": 160,
     "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "seti"
+    "workbench.welcome.enabled": false,
+    "workbench.iconTheme": "seti",
+    // prettier
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5"
 }
