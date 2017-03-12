@@ -84,3 +84,5 @@ vscode/*cookies*
 vscode/User/workspaceStorage/
 vscode/Local Storage/
 vscode/storage.json
+
+.vscode
