@@ -80,13 +80,16 @@ set -gx VM_DEBUG "Y"
 if test -d /usr/local/sbin
     set -gx PATH $PATH /usr/local/sbin
 end
+# fastlane
+if test -d $HOME/.fastlane/bin
+    set -gx PATH $PATH $HOME/.fastlane/bin
+end
 # android
 if test -d $ANDROID_HOME
     set -gx PATH $PATH $ANDROID_HOME/platform-tools
     set -gx PATH $PATH $ANDROID_HOME/tools
 end
 if test -d $ANDROID_NDK; set -gx PATH $PATH $ANDROID_NDK; end
-
 # ant
 if test -d $ANT_HOME
     set -gx PATH $PATH $ANT_HOME/bin
