@@ -23,6 +23,8 @@
 	b = number -c fish $DOTFILES/git/git-blame-colored.fish
 [push]
 	default = simple
+[rebase]
+	autostash = true
 [core]
 	editor = vim
 	excludesfile = /Users/fabian/.gitignore_global
