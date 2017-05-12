@@ -106,6 +106,8 @@ end
 if test -d $NODE_PATH/bin
     set -gx PATH $PATH $NODE_PATH/bin
 end
+# less
+export LESS='--raw-control-chars'
 
 
 ##### ALIASES #####

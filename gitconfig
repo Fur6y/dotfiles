@@ -26,7 +26,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/fabian/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = diff-so-fancy | less --raw-control-chars --tabs=4
 [fetch]
 	prune = true
 [remote "origin"]
