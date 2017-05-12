@@ -4,18 +4,24 @@
     "editor.lineHeight": 18,
     "editor.snippetSuggestions": "top",
     "workbench.sideBar.location": "right",
-    "vsicons.dontShowNewVersionMessage": true,
     "workbench.statusBar.visible": true,
     "editor.rulers": [120],
     "editor.renderWhitespace": "boundary",
     "workbench.editor.enablePreview": false,
-    "editor.wordWrap": 160,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 160,
     "workbench.colorTheme": "Monokai",
     "workbench.welcome.enabled": false,
     "workbench.iconTheme": "seti",
+    // terminal
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
     // prettier
     "prettier.printWidth": 120,
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
-    "prettier.trailingComma": "es5"
+    "prettier.trailingComma": "es5",
+    "window.zoomLevel": 0,
+    "editor.formatOnSave": false,
+    "debug.openExplorerOnEnd": true,
+    "debug.inlineValues": true
 }
