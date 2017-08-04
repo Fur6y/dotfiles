@@ -194,8 +194,8 @@
         },
         "Tags": [],
         "Semantic History": {
-            "text": "",
-            "action": "best editor",
+            "text" : "open \"vscode:\/\/file\\1?\\2\"",
+            "action": "command",
             "editor": "com.sublimetext.3"
         },
         "Triggers": [],

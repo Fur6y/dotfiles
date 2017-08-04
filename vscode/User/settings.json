@@ -1,5 +1,6 @@
 // Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
 {
+    "editor.minimap.enabled": false,
     "editor.fontSize": 13,
     "editor.lineHeight": 18,
     "editor.snippetSuggestions": "top",
@@ -11,7 +12,6 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 160,
     "workbench.colorTheme": "Monokai",
-    "workbench.welcome.enabled": false,
     "workbench.iconTheme": "seti",
     // terminal
     "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
@@ -20,8 +20,11 @@
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
+    "prettier.eslintIntegration": true,
     "window.zoomLevel": 0,
     "editor.formatOnSave": false,
     "debug.openExplorerOnEnd": true,
-    "debug.inlineValues": true
+    "debug.inlineValues": true,
+    "window.nativeTabs": true,
+    "editor.autoIndent": true
 }

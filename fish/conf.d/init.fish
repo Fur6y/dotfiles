@@ -102,6 +102,13 @@ end
 if test -d $JBOSS_HOME
     set -gx PATH $PATH $JBOSS_HOME/bin
 end
+# node
+if test -d /usr/local/opt/node@6/bin
+    set -gx PATH $PATH /usr/local/opt/node@6/bin
+end
+if test -d /usr/local/opt/node@4/bin
+    set -gx PATH $PATH /usr/local/opt/node@4/bin
+end
 # npm
 if test -d $NODE_PATH/bin
     set -gx PATH $PATH $NODE_PATH/bin
