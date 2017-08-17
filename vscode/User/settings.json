@@ -20,11 +20,23 @@
     "prettier.tabWidth": 4,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
-    "prettier.eslintIntegration": true,
+    // "prettier.eslintIntegration": true,
     "window.zoomLevel": 0,
     "editor.formatOnSave": false,
     "debug.openExplorerOnEnd": true,
     "debug.inlineValues": true,
     "window.nativeTabs": true,
-    "editor.autoIndent": true
+    "editor.autoIndent": true,
+    // plantuml
+    "plantuml.render": "Local",
+    "plantuml.exportSubFolder": false,
+    "plantuml.includes": [
+        "styles/blue"
+    ],
+    // gitlens
+    "gitlens.blame.line.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.statusBar.enabled": true,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.statusBar.format": "${author}, ${ago}: »${message}«"
 }
