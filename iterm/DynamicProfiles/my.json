@@ -1,264 +1,274 @@
 {
-    "Profiles": [{
-        "Name": "My",
-        "Guid": "7B37C4CF-B86F-4F5D-90E7-9BED65D4310D",
-        "Rows": 42,
-        "Columns": 125,
-        "Normal Font": "MesloLGMNerdFontCM-RegularForPowerline 11",
-        "Use Non-ASCII Font" : false,
-        "Use Italic Font": true,
-        "Use Bold Font": true,
-        "Vertical Spacing": 1,
-        "Horizontal Spacing": 1,
-        "Badge Text": "",
-        "Working Directory": "~/git",
-        "Prompt Before Closing 2": 0,
-        "Scrollback With Status Bar": false,
-        "Scrollback Lines": 0,
-        "Scrollback in Alternate Screen": true,
-        "Hide After Opening": false,
-        "Flashing Bell": false,
-        "BM Growl": true,
-        "AWDS Window Directory": "",
-        "Right Option Key Sends": 0,
-        "Character Encoding": 4,
-        "Blend": 0.3,
-        "Mouse Reporting": true,
-        "Show Mark Indicators": false,
-        "Non-ASCII Anti Aliased": true,
-        "Sync Title": false,
-        "Disable Window Resizing": true,
-        "Close Sessions On End": true,
-        "Shortcut": "",
-        "Background Image Location": "",
-        "Unlimited Scrollback": true,
-        "Custom Command": "No",
-        "AWDS Tab Option": "No",
-        "Log Directory": "",
-        "Use Canonical Parser": false,
-        "Background Image Is Tiled": false,
-        "Send Code When Idle": false,
-        "ASCII Anti Aliased": true,
-        "Silence Bell": false,
-        "Window Type": 0,
-        "Allow Title Reporting": true,
-        "Allow Title Setting": true,
-        "Use Bright Bold": true,
-        "Default Bookmark": "No",
-        "Disable Smcup Rmcup": false,
-        "Blinking Cursor": false,
-        "Idle Code": 0,
-        "Automatically Log": false,
-        "Smart Cursor Color": true,
-        "Ambiguous Double Width": false,
-        "Blur Radius": 0.1,
-        "Cursor Type": 2,
-        "AWDS Pane Directory": "",
-        "Blur": false,
-        "Disable Printing": false,
-        "AWDS Tab Directory": "",
-        "AWDS Pane Option": "No",
-        "Command": "",
-        "Terminal Type": "xterm-256color",
-        "Option Key Sends": 0,
-        "Blink Allowed": false,
-        "Minimum Contrast": 0,
-        "Transparency": 0,
-        "Initial Text": "",
-        "Screen": -1,
-        "AWDS Window Option": "No",
-        "Visual Bell": true,
-        "Custom Directory": "Recycle",
-        "Set Local Environment Vars": false,
-        "Ansi 0 Color": {
-            "Green Component": 0.155759260058403,
-            "Red Component": 0,
-            "Blue Component": 0.1937013864517212
-        },
-        "Ansi 1 Color": {
-            "Green Component": 0.1084065511822701,
-            "Red Component": 0.8192697763442993,
-            "Blue Component": 0.1414571404457092
-        },
-        "Ansi 2 Color": {
-            "Green Component": 0.7455558180809021,
-            "Red Component": 0.4233920872211456,
-            "Blue Component": 0.4240939915180206
-        },
-        "Ansi 3 Color": {
-            "Green Component": 0.4675142467021942,
-            "Red Component": 0.6474647521972656,
-            "Blue Component": 0.02348481118679047
-        },
-        "Ansi 4 Color": {
-            "Green Component": 0.462659478187561,
-            "Red Component": 0.1275488436222076,
-            "Blue Component": 0.7823141813278198
-        },
-        "Ansi 5 Color": {
-            "Green Component": 0.1080246344208717,
-            "Red Component": 0.7773894071578979,
-            "Blue Component": 0.4351663589477539
-        },
-        "Ansi 6 Color": {
-            "Green Component": 0.570823609828949,
-            "Red Component": 0.1467953473329544,
-            "Blue Component": 0.5250227451324463
-        },
-        "Ansi 7 Color": {
-            "Green Component": 0.8900123834609985,
-            "Red Component": 0.916110634803772,
-            "Blue Component": 0.7978110313415527
-        },
-        "Ansi 8 Color": {
-            "Green Component": 0.3914272487163544,
-            "Red Component": 0,
-            "Blue Component": 0.5350551605224609
-        },
-        "Ansi 9 Color": {
-            "Green Component": 0.08450446277856827,
-            "Red Component": 0.9594110250473022,
-            "Blue Component": 0.2322575747966766
-        },
-        "Ansi 10 Color": {
-            "Green Component": 0.9369955062866211,
-            "Red Component": 0.3174487054347992,
-            "Blue Component": 0.5193102955818176
-        },
-        "Ansi 11 Color": {
-            "Green Component": 0.4943007528781891,
-            "Red Component": 0.6971083879470825,
-            "Blue Component": 0.1584954559803009
-        },
-        "Ansi 12 Color": {
-            "Green Component": 0.5555351972579956,
-            "Red Component": 0.09199663996696472,
-            "Blue Component": 0.7839322686195374
-        },
-        "Ansi 13 Color": {
-            "Green Component": 0.3028915822505951,
-            "Red Component": 0.886243999004364,
-            "Blue Component": 0.5583886504173279
-        },
-        "Ansi 14 Color": {
-            "Green Component": 0.7016708850860596,
-            "Red Component": 0,
-            "Blue Component": 0.6201876997947693
-        },
-        "Ansi 15 Color": {
-            "Green Component": 0.9579439163208008,
-            "Red Component": 0.9894341826438904,
-            "Blue Component": 0.8640598058700562
-        },
-        "Cursor Text Color": {
-            "Green Component": 0.155759260058403,
-            "Red Component": 0,
-            "Blue Component": 0.1937013864517212
-        },
-        "Cursor Color": {
-            "Green Component": 0.2933464646339417,
-            "Red Component": 0.9547511339187622,
-            "Blue Component": 0
-        },
-        "Background Color": {
-            "Green Component": 0.1178361028432846,
-            "Red Component": 0,
-            "Blue Component": 0.1517027318477631
-        },
-        "Selected Text Color": {
-            "Green Component": 0.5624475479125977,
-            "Red Component": 0.477973610162735,
-            "Blue Component": 0.5573205351829529
-        },
-        "Foreground Color": {
-            "Green Component": 0.7592126131057739,
-            "Red Component": 0.6100099086761475,
-            "Blue Component": 0.7630731463432312
-        },
-        "Selection Color": {
-            "Green Component": 0.2157628536224365,
-            "Red Component": 0,
-            "Blue Component": 0.2816705107688904
-        },
-        "Bold Color": {
-            "Green Component": 0.8345006704330444,
-            "Red Component": 0.7091325521469116,
-            "Blue Component": 0.8268711566925049
-        },
-        "Badge Color": {
-            "Red Component": 1,
-            "Color Space": "Calibrated",
-            "Blue Component": 0,
-            "Alpha Component": 0.5,
-            "Green Component": 0
-        },
-        "Tags": [],
-        "Semantic History": {
-            "text" : "open \"vscode:\/\/file\\1?\\2\"",
-            "action": "command",
-            "editor": "com.sublimetext.3"
-        },
-        "Triggers": [],
-        "Jobs to Ignore": [
-            "rlogin",
-            "ssh",
-            "slogin",
-            "telnet"
-        ],
-        "Smart Selection Rules": [{
-            "notes": "Word bounded by whitespace",
-            "regex": "\\S+",
-            "precision": "low"
-        }, {
-            "notes": "C++ namespace::identifier",
-            "regex": "([a-zA-Z0-9_]+::)+[a-zA-Z0-9_]+",
-            "precision": "normal"
-        }, {
-            "notes": "Paths",
-            "regex": "\\~?\/?([[:letter:][:number:]._-]+\/+)+[[:letter:][:number:]._-]+\/?",
-            "precision": "normal"
-        }, {
-            "notes": "Quoted string",
-            "regex": "@?\"(?:[^\"\\\\]|\\\\.)*\"",
-            "precision": "normal"
-        }, {
-            "notes": "Java\/Python include paths",
-            "regex": "([[:letter:][:number:]._]+\\.)+[[:letter:][:number:]._]+",
-            "precision": "normal"
-        }, {
-            "notes": "mailto URL",
-            "regex": "\\bmailto:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\\-]+\\.)*[a-zA-Z0-9\\-]+\\b",
-            "precision": "normal"
-        }, {
-            "notes": "Obj-C selector",
-            "regex": "@selector\\([^)]+\\)",
-            "precision": "high"
-        }, {
-            "notes": "email address",
-            "regex": "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}\\b",
-            "precision": "high"
-        }, {
-            "notes": "HTTP URL",
-            "regex": "https?:\/\/([a-z0-9A-Z]+(:[a-zA-Z0-9]+)?@)?[a-z0-9A-Z]+(\\.[a-z0-9A-Z]+)*((:[0-9]+)?)(\/[a-zA-Z0-9;\/\\.\\-_+%~?&@=#\\(\\)]*)?",
-            "precision": "very_high"
-        }, {
-            "notes": "SSH URL",
-            "regex": "\\bssh:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\\-]+\\.)*[a-zA-Z0-9\\-]+\\b",
-            "precision": "very_high"
-        }, {
-            "notes": "Telnet URL",
-            "regex": "\\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\\-]+\\.)*[a-zA-Z0-9\\-]+\\b",
-            "precision": "very_high"
-        }],
-        "Keyboard Map": {
-            "0x61-0x100000": {
-                "Text": "Select Current Command",
-                "Action": 25
+    "Profiles": [
+        {
+            "ASCII Anti Aliased": true,
+            "AWDS Pane Directory": "",
+            "AWDS Pane Option": "No",
+            "AWDS Tab Directory": "",
+            "AWDS Tab Option": "No",
+            "AWDS Window Directory": "",
+            "AWDS Window Option": "No",
+            "Allow Title Reporting": true,
+            "Allow Title Setting": true,
+            "Ambiguous Double Width": false,
+            "Automatically Log": false,
+            "BM Growl": true,
+            "Background Image Is Tiled": false,
+            "Background Image Location": "",
+            "Badge Text": "",
+            "Blend": 0.3,
+            "Blink Allowed": false,
+            "Blinking Cursor": false,
+            "Blur Radius": 0.1,
+            "Blur": false,
+            "Character Encoding": 4,
+            "Close Sessions On End": true,
+            "Columns": 125,
+            "Command": "",
+            "Cursor Type": 2,
+            "Custom Command": "No",
+            "Custom Directory": "Recycle",
+            "Default Bookmark": "No",
+            "Disable Printing": false,
+            "Disable Smcup Rmcup": false,
+            "Disable Window Resizing": true,
+            "Flashing Bell": false,
+            "Guid": "7B37C4CF-B86F-4F5D-90E7-9BED65D4310D",
+            "Hide After Opening": false,
+            "Horizontal Spacing": 1,
+            "Idle Code": 0,
+            "Initial Text": "",
+            "Log Directory": "",
+            "Minimum Contrast": 0,
+            "Mouse Reporting": true,
+            "Name": "My",
+            "Non-ASCII Anti Aliased": true,
+            "Normal Font": "MesloLGMNerdFontCM-RegularForPowerline 11",
+            "Open Toolbelt": true,
+            "Option Key Sends": 0,
+            "Prompt Before Closing 2": 0,
+            "Right Option Key Sends": 0,
+            "Rows": 42,
+            "Screen": -1,
+            "Scrollback Lines": 0,
+            "Scrollback With Status Bar": false,
+            "Scrollback in Alternate Screen": true,
+            "Send Code When Idle": false,
+            "Set Local Environment Vars": false,
+            "Shortcut": "",
+            "Show Mark Indicators": false,
+            "Silence Bell": false,
+            "Smart Cursor Color": true,
+            "Sync Title": false,
+            "Terminal Type": "xterm-256color",
+            "Transparency": 0,
+            "Unlimited Scrollback": true,
+            "Use Bold Font": true,
+            "Use Bright Bold": true,
+            "Use Canonical Parser": false,
+            "Use Italic Font": true,
+            "Use Non-ASCII Font": false,
+            "Vertical Spacing": 1,
+            "Visual Bell": true,
+            "Window Type": 0,
+            "Working Directory": "~/git",
+            "Ansi 0 Color": {
+                "Green Component": 0.155759260058403,
+                "Red Component": 0,
+                "Blue Component": 0.1937013864517212
             },
-            "0x2f-0x120000": {
-                "Text": "Open Recent Directories...",
-                "Action": 25
+            "Ansi 1 Color": {
+                "Green Component": 0.1084065511822701,
+                "Red Component": 0.8192697763442993,
+                "Blue Component": 0.1414571404457092
+            },
+            "Ansi 2 Color": {
+                "Green Component": 0.7455558180809021,
+                "Red Component": 0.4233920872211456,
+                "Blue Component": 0.4240939915180206
+            },
+            "Ansi 3 Color": {
+                "Green Component": 0.4675142467021942,
+                "Red Component": 0.6474647521972656,
+                "Blue Component": 0.02348481118679047
+            },
+            "Ansi 4 Color": {
+                "Green Component": 0.462659478187561,
+                "Red Component": 0.1275488436222076,
+                "Blue Component": 0.7823141813278198
+            },
+            "Ansi 5 Color": {
+                "Green Component": 0.1080246344208717,
+                "Red Component": 0.7773894071578979,
+                "Blue Component": 0.4351663589477539
+            },
+            "Ansi 6 Color": {
+                "Green Component": 0.570823609828949,
+                "Red Component": 0.1467953473329544,
+                "Blue Component": 0.5250227451324463
+            },
+            "Ansi 7 Color": {
+                "Green Component": 0.8900123834609985,
+                "Red Component": 0.916110634803772,
+                "Blue Component": 0.7978110313415527
+            },
+            "Ansi 8 Color": {
+                "Green Component": 0.3914272487163544,
+                "Red Component": 0,
+                "Blue Component": 0.5350551605224609
+            },
+            "Ansi 9 Color": {
+                "Green Component": 0.08450446277856827,
+                "Red Component": 0.9594110250473022,
+                "Blue Component": 0.2322575747966766
+            },
+            "Ansi 10 Color": {
+                "Green Component": 0.9369955062866211,
+                "Red Component": 0.3174487054347992,
+                "Blue Component": 0.5193102955818176
+            },
+            "Ansi 11 Color": {
+                "Green Component": 0.4943007528781891,
+                "Red Component": 0.6971083879470825,
+                "Blue Component": 0.1584954559803009
+            },
+            "Ansi 12 Color": {
+                "Green Component": 0.5555351972579956,
+                "Red Component": 0.09199663996696472,
+                "Blue Component": 0.7839322686195374
+            },
+            "Ansi 13 Color": {
+                "Green Component": 0.3028915822505951,
+                "Red Component": 0.886243999004364,
+                "Blue Component": 0.5583886504173279
+            },
+            "Ansi 14 Color": {
+                "Green Component": 0.7016708850860596,
+                "Red Component": 0,
+                "Blue Component": 0.6201876997947693
+            },
+            "Ansi 15 Color": {
+                "Green Component": 0.9579439163208008,
+                "Red Component": 0.9894341826438904,
+                "Blue Component": 0.8640598058700562
+            },
+            "Cursor Text Color": {
+                "Green Component": 0.155759260058403,
+                "Red Component": 0,
+                "Blue Component": 0.1937013864517212
+            },
+            "Cursor Color": {
+                "Green Component": 0.2933464646339417,
+                "Red Component": 0.9547511339187622,
+                "Blue Component": 0
+            },
+            "Background Color": {
+                "Green Component": 0.1178361028432846,
+                "Red Component": 0,
+                "Blue Component": 0.1517027318477631
+            },
+            "Selected Text Color": {
+                "Green Component": 0.5624475479125977,
+                "Red Component": 0.477973610162735,
+                "Blue Component": 0.5573205351829529
+            },
+            "Foreground Color": {
+                "Green Component": 0.7592126131057739,
+                "Red Component": 0.6100099086761475,
+                "Blue Component": 0.7630731463432312
+            },
+            "Selection Color": {
+                "Green Component": 0.2157628536224365,
+                "Red Component": 0,
+                "Blue Component": 0.2816705107688904
+            },
+            "Bold Color": {
+                "Green Component": 0.8345006704330444,
+                "Red Component": 0.7091325521469116,
+                "Blue Component": 0.8268711566925049
+            },
+            "Badge Color": {
+                "Red Component": 1,
+                "Color Space": "Calibrated",
+                "Blue Component": 0,
+                "Alpha Component": 0.5,
+                "Green Component": 0
+            },
+            "Tags": [],
+            "Semantic History": {
+                "text": "open \"vscode://file\\1?\\2\"",
+                "action": "command",
+                "editor": "com.sublimetext.3"
+            },
+            "Triggers": [],
+            "Jobs to Ignore": ["rlogin", "ssh", "slogin", "telnet"],
+            "Smart Selection Rules": [
+                {
+                    "notes": "Word bounded by whitespace",
+                    "regex": "\\S+",
+                    "precision": "low"
+                },
+                {
+                    "notes": "C++ namespace::identifier",
+                    "regex": "([a-zA-Z0-9_]+::)+[a-zA-Z0-9_]+",
+                    "precision": "normal"
+                },
+                {
+                    "notes": "Paths",
+                    "regex": "\\~?/?([[:letter:][:number:]._-]+/+)+[[:letter:][:number:]._-]+/?",
+                    "precision": "normal"
+                },
+                {
+                    "notes": "Quoted string",
+                    "regex": "@?\"(?:[^\"\\\\]|\\\\.)*\"",
+                    "precision": "normal"
+                },
+                {
+                    "notes": "Java/Python include paths",
+                    "regex": "([[:letter:][:number:]._]+\\.)+[[:letter:][:number:]._]+",
+                    "precision": "normal"
+                },
+                {
+                    "notes": "mailto URL",
+                    "regex": "\\bmailto:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\\-]+\\.)*[a-zA-Z0-9\\-]+\\b",
+                    "precision": "normal"
+                },
+                {
+                    "notes": "Obj-C selector",
+                    "regex": "@selector\\([^)]+\\)",
+                    "precision": "high"
+                },
+                {
+                    "notes": "email address",
+                    "regex": "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}\\b",
+                    "precision": "high"
+                },
+                {
+                    "notes": "HTTP URL",
+                    "regex": "https?://([a-z0-9A-Z]+(:[a-zA-Z0-9]+)?@)?[a-z0-9A-Z]+(\\.[a-z0-9A-Z]+)*((:[0-9]+)?)(/[a-zA-Z0-9;/\\.\\-_+%~?&@=#\\(\\)]*)?",
+                    "precision": "very_high"
+                },
+                {
+                    "notes": "SSH URL",
+                    "regex": "\\bssh:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\\-]+\\.)*[a-zA-Z0-9\\-]+\\b",
+                    "precision": "very_high"
+                },
+                {
+                    "notes": "Telnet URL",
+                    "regex": "\\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\\-]+\\.)*[a-zA-Z0-9\\-]+\\b",
+                    "precision": "very_high"
+                }
+            ],
+            "Keyboard Map": {
+                "0x61-0x100000": {
+                    "Text": "Select Current Command",
+                    "Action": 25
+                },
+                "0x2f-0x120000": {
+                    "Text": "Open Recent Directories...",
+                    "Action": 25
+                }
             }
         }
-    }]
+    ]
 }
