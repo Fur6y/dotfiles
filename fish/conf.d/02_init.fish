@@ -4,11 +4,13 @@ set -gx DOTFILES $HOME/dotfiles
 ##### FISH #####
 # settings for fish theme "bobthefish"
 set -gx theme_color_scheme user
-# add my-functions and vendor-functions directory
-set -g fish_function_path $fish_function_path $DOTFILES/fish/my-functions
-set -l vendors (find $DOTFILES/fish/vendor-functions -name '*.fish')
-for vendor in $vendors
+
+# import vendor scripts and functions
+for vendor in (find $DOTFILES/fish/vendor/conf.d -name '*.fish')
     source $vendor
+end
+for vendor in (find $DOTFILES/fish/vendor/functions -type d)
+    set -g fish_function_path $fish_function_path $vendor
 end
 
 ##### EXPORTS #####
