@@ -479,7 +479,6 @@ end
 function __bobthefish_prompt_git -S -a current_dir -d 'Display the actual git state'
   set -l dirty   (command git diff --no-ext-diff --quiet --exit-code ^/dev/null; or echo -n "$__bobthefish_git_dirty_glyph")
   set -l staged  (command git diff --cached --no-ext-diff --quiet --exit-code ^/dev/null; or echo -n "$__bobthefish_git_staged_glyph")
-  set -l stashed (command git rev-parse --verify --quiet refs/stash >/dev/null; and echo -n "$__bobthefish_git_stashed_glyph")
   set -l ahead   (__bobthefish_git_ahead)
 
   set -l new ''
@@ -491,7 +490,7 @@ function __bobthefish_prompt_git -S -a current_dir -d 'Display the actual git st
     end
   end
 
-  set -l flags "$dirty$staged$stashed$ahead$new"
+  set -l flags "$dirty$staged$ahead$new"
   [ "$flags" ]
     and set flags " $flags"
 
