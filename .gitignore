@@ -87,3 +87,6 @@ vscode/storage.json
 vscode/Preferences
 
 .vscode
+
+# fish
+fish/dir_names
