@@ -6,11 +6,11 @@ set -gx DOTFILES $HOME/dotfiles
 set -gx theme_color_scheme user
 
 # import vendor scripts and functions
-for vendor in (find $DOTFILES/fish/vendor/conf.d -name '*.fish')
-    source $vendor
-end
 for vendor in (find $DOTFILES/fish/vendor/functions -type d)
     set -g fish_function_path $fish_function_path $vendor
+end
+for vendor in (find $DOTFILES/fish/vendor/conf.d -name '*.fish')
+    source $vendor
 end
 
 ##### EXPORTS #####
