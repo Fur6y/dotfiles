@@ -20,7 +20,7 @@ function fish_title
         for config in $dir_names
             set -l dirConfig (string split -r -m1 : $config)
 
-            if string match -q (pwd) $dirConfig[2]
+            if string match -q $dirConfig[2] (pwd)
                 set -l dirName $dirConfig[1]
                 set title $dirName
                 break
