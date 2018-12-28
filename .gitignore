@@ -85,6 +85,9 @@ vscode/User/workspaceStorage/
 vscode/Local Storage/
 vscode/storage.json
 vscode/Preferences
+vscode/clp/
+vscode/machineid
+vscode/languagepacks.json
 
 .vscode
 

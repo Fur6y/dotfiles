@@ -44,5 +44,8 @@
 	trustExitCode = false
 [commit]
 	verbose = true
+[rerere]
+	enabled = false
+	autoupdate = false
 [pull]
 	rebase = true

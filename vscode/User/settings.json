@@ -1,26 +1,25 @@
 // Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
 {
+    // editor
     "editor.minimap.enabled": false,
-    "editor.fontSize": 13,
     "editor.lineHeight": 18,
     "editor.snippetSuggestions": "top",
-    "workbench.sideBar.location": "right",
-    "workbench.statusBar.visible": true,
     "editor.rulers": [120],
     "editor.renderWhitespace": "boundary",
-    "workbench.editor.enablePreview": false,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 160,
+    "editor.stablePeek": false,
+    // vscode
+    "explorer.decorations.colors": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": true,
     "workbench.colorTheme": "Monokai",
+    // "workbench.colorTheme": "Default Light+",
     "workbench.iconTheme": "seti",
+    "workbench.startupEditor": "newUntitledFile",
     // terminal
     "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
-    // prettier
-    "prettier.printWidth": 120,
-    "prettier.tabWidth": 4,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "es5",
-    // "prettier.eslintIntegration": true,
     "window.zoomLevel": 0,
     "editor.formatOnSave": false,
     "debug.openExplorerOnEnd": true,
@@ -28,15 +27,51 @@
     "window.nativeTabs": true,
     "editor.autoIndent": true,
     // plantuml
-    "plantuml.render": "Local",
-    "plantuml.exportSubFolder": false,
-    "plantuml.includes": [
-        "styles/blue"
-    ],
+    // "plantuml.render": "Local",
+    // "plantuml.exportSubFolder": false,
+    // "plantuml.includes": [
+    //     "styles/blue"
+    // ],
+    // linter
+    "eslint.packageManager": "npm",
+    "extensions.ignoreRecommendations": false,
+    "explorer.confirmDragAndDrop": false,
     // gitlens
-    "gitlens.blame.line.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": true,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.statusBar.enabled": true,
     "gitlens.codeLens.authors.enabled": false,
-    "gitlens.statusBar.format": "${author}, ${ago}: »${message}«"
+    "gitlens.statusBar.format": "${author}, ${ago}: »${message}«",
+    "gitlens.keymap": "chorded",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": false
+    },
+    // prettier
+    "prettier.eslintIntegration": false,
+    "prettier.printWidth": 120,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "es5",
+    // "prettier.requireConfig": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "editor.fontSize": 13,
+    "[log]": {
+        "editor.fontSize": 11,
+        "editor.lineHeight": 15,
+        "editor.wordWrap": "off",
+        "editor.rulers": [],
+        "editor.renderWhitespace": "none",
+    },
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true
 }

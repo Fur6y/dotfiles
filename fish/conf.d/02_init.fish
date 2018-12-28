@@ -45,11 +45,13 @@ set -gx ANT_OPTS "-Xmx512M"
 set -gx GRADLE_HOME /Applications/Android\ Studio.app/Contents/gradle/gradle-2.14.1
 # maven
 set -gx M3_HOME /usr/local/Cellar/maven/3.3.9
-set -gx MAVEN_OPTS "-Xms1024m -Xmx4096m -XX:PermSize=1024m"
+set -gx MAVEN_OPTS "-Xms1024m -Xmx4096m"
 # jboss
-set -gx JBOSS_HOME /opt/wildfly10/
+set -gx JBOSS_HOME $HOME/git/wildfly
+# phantomjs
+set -gx PHANTOMJS_BIN $HOME/.node_modules/bin/phantomjs
 # graphiz
-set -gx GRAPHVIZ_DOT /usr/local/Cellar/graphviz/2.38.0/bin/dot
+set -gx GRAPHVIZ_DOT /usr/local/Cellar/graphviz/2.40.1/bin/dot
 # fisherman plugin 'bd'
 set -gx BD_OPT "insensitive"
 # node
@@ -66,16 +68,16 @@ if type --quiet "kpsewhich"
 end
 # sane
 set -gx SANE_DEFAULT_DEVICE "net:192.168.178.2:plustek:libusb:001:005"
-# docker
-if type --quiet "docker-machine"
-    if test (docker-machine status) = "Running"
-        eval (docker-machine env default --shell fish)
-    end
-end
 # qivicon emulator
 set -gx VM_DEBUG "Y"
 # set -gx VM_DEBUG_PORT "8000"
 # set -gx VM_DEBUG_SUSPEND "Y"
+
+# less
+set -gx LESS '--raw-control-chars'
+
+# groovy
+set -gx GROOVY_HOME /usr/local/opt/groovy/libexec
 
 
 ##### PATH #####
@@ -105,18 +107,19 @@ if test -d $JBOSS_HOME
     set -gx PATH $PATH $JBOSS_HOME/bin
 end
 # node
-if test -d /usr/local/opt/node@6/bin
-    set -gx PATH $PATH /usr/local/opt/node@6/bin
+if test -d /usr/local/opt/node@8/bin
+    set -gx PATH $PATH /usr/local/opt/node@8/bin
 end
-if test -d /usr/local/opt/node@4/bin
-    set -gx PATH $PATH /usr/local/opt/node@4/bin
-end
+# if test -d /usr/local/opt/node@6/bin
+#     set -gx PATH $PATH /usr/local/opt/node@6/bin
+# end
+# if test -d /usr/local/opt/node@4/bin
+#     set -gx PATH $PATH /usr/local/opt/node@4/bin
+# end
 # npm
 if test -d $NODE_PATH/bin
     set -gx PATH $PATH $NODE_PATH/bin
 end
-# less
-export LESS='--raw-control-chars'
 
 
 ##### ALIASES #####
