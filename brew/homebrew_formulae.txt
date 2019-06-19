@@ -76,8 +76,8 @@ moreutils
 mysql
 ncdu
 nettle
-node
 npth
+nvm
 ocaml
 ocamlbuild
 opam
