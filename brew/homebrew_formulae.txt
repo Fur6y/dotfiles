@@ -117,3 +117,5 @@ wget
 xhyve
 xz
 zeromq
+zsh
+zsh-autosuggestions

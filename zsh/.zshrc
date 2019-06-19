@@ -71,6 +71,7 @@ ZSH_CUSTOM=~/git/dotfiles/zsh/oh-my-zsh/custom
 plugins=(git git-flow osx nvm node npm npx grunt gulp mvn docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
