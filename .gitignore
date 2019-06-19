@@ -93,3 +93,6 @@ vscode/languagepacks.json
 
 # fish
 fish/dir_names
+
+# zsh
+zsh/oh-my-zsh/custom
