@@ -26,7 +26,7 @@
 [rebase]
 	autostash = true
 [core]
-	editor = vim
+	editor = code --wait
 	excludesfile = /Users/fabian/.gitignore_global
 	pager = diff-so-fancy | less --raw-control-chars --tabs=4
 [fetch]
