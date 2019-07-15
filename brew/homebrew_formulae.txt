@@ -20,7 +20,6 @@ coreutils
 czmq
 docker
 emojify
-fish
 fontconfig
 fontforge
 freetype
@@ -119,3 +118,4 @@ xz
 zeromq
 zsh
 zsh-autosuggestions
+zsh-syntax-highlighting

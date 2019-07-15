@@ -35,7 +35,7 @@ fish/fishd*
 # Misc
 npm-debug.log
 backup/*
-*.private*
+*.private
 
 ### Node ###
 # Logs
@@ -95,4 +95,5 @@ vscode/languagepacks.json
 fish/dir_names
 
 # zsh
-zsh/oh-my-zsh/custom
+zsh/oh-my-zsh/custom/plugins
+zsh/oh-my-zsh/custom/themes

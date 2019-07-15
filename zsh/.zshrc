@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="${HOME}/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,27 +68,12 @@ ZSH_CUSTOM=~/git/dotfiles/zsh/oh-my-zsh/custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow osx nvm node npm npx grunt gulp mvn docker docker-compose)
+export FZF_BASE=$(brew --prefix)/opt/fzf
+plugins=(fzf osx nvm node npm npx grunt gulp mvn docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -99,11 +84,25 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -d "$HOME/.nvm" ]
-then
-    export NVM_DIR="$HOME/.nvm"
-    # This loads nvm
-    [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-    # This loads nvm bash_completion
-    [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
-fi
+# fpath=(
+#     $fpath
+#     "$ZSH_CUSTOM/functions"
+# )
+
+# SOME TESTING:
+# fpath=(
+#     /usr/local/share/zsh-completions
+#     /usr/local/share/zsh/site-functions
+#     $fpath
+# )
+# autoload -Uz compinit && compinit
+# compinit
+# autoload -Uz compinit && compinit
+# autoload -Uz bashcompinit
+# bashcompinit -i
+
+# [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion || {
+#     # if not found in /usr/local/etc, try the brew --prefix location
+#     [ -f "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ] && \
+#         . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
+# }
