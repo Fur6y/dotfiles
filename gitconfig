@@ -44,8 +44,11 @@
 	trustExitCode = false
 [commit]
 	verbose = true
+	gpgsign = true
 [rerere]
 	enabled = false
 	autoupdate = false
 [pull]
 	rebase = true
+[tag]
+	gpgsign = true
