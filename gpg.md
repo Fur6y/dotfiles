@@ -1,7 +1,7 @@
 # GPG with Git
 
 ```bash
-brew install gpg2
+brew install gpg2 pinentry-mac
 
 gpg --full-gen-key
 
