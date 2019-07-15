@@ -7,9 +7,10 @@
 ```shell
 cd ~/dotfiles && npm i
 ln -s ~/dotfiles/npm/npmrc ~/.npmrc
-ln -s ~/dotfiles/.eslintrc ~/.eslintrc
+ln -s ~/dotfiles/.eslintrc.json ~/.eslintrc.json
 ln -s ~/dotfiles/.remarkrc ~/.remarkrc
 ln -s ~/dotfiles/fish ~/.config/fish
+ln -s ~/dotfiles/gnupg ~/.gnupg
 ./install.sh
 ```
 
