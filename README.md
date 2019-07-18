@@ -5,11 +5,10 @@
 ## Install
 
 ```shell
-cd ~/dotfiles && npm i
 ln -s ~/dotfiles/npm/npmrc ~/.npmrc
 ln -s ~/dotfiles/.eslintrc.json ~/.eslintrc.json
 ln -s ~/dotfiles/.remarkrc ~/.remarkrc
-ln -s ~/dotfiles/fish ~/.config/fish
+ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/dotfiles/gnupg ~/.gnupg
 ./install.sh
 ```
@@ -17,11 +16,8 @@ ln -s ~/dotfiles/gnupg ~/.gnupg
 ## Aliases
 
 ```shell
-update_all      # runs update for osx, brew, brew cask, npm, gem
 ipglobal        # print global ip address
 ip              # print local ip address
-nl              # print list of all local top level npm dependencies
-ng              # print list of all global top level npm dependencies
 ```
 
 ## Directories

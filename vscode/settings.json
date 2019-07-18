@@ -1,0 +1,117 @@
+// Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
+{
+    // window
+    "window.nativeTabs": true,
+    "window.zoomLevel": 0,
+    // editor
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 18,
+    "editor.snippetSuggestions": "top",
+    "editor.rulers": [120],
+    "editor.renderWhitespace": "boundary",
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 160,
+    "editor.stablePeek": false,
+    "editor.autoIndent": true,
+    "editor.matchBrackets": false,
+    // search
+    "search.useIgnoreFiles": true,
+    "search.exclude": {
+        ".git": true,
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+    // workbench
+    // "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Monokai",
+    "workbench.editor.enablePreview": false,
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": true,
+    "workbench.iconTheme": "seti",
+    "workbench.startupEditor": "newUntitledFile",
+    // explorer
+    "explorer.decorations.colors": true,
+    "explorer.confirmDragAndDrop": false,
+    // terminal
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+    // debug
+    "debug.openExplorerOnEnd": true,
+    "debug.inlineValues": true,
+    // extensions
+    "extensions.ignoreRecommendations": false,
+    // javascript
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    // eslint
+    "eslint.alwaysShowStatus": true,
+    "eslint.packageManager": "npm",
+    "eslint.autoFixOnSave": false,
+    "eslint.validate": [
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "javascriptreact",
+            "autoFix": true
+        },
+        {
+            "language": "javascript",
+            "autoFix": true
+        }
+    ],
+    // prettier
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": false,
+    "prettier.disableLanguages": [],
+    "prettier.printWidth": 120,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "es5",
+    // vetur
+    "vetur.format.enable": false,
+    "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+    "vetur.validation.template": false,
+    // gitlens
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": true,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.statusBar.enabled": true,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.statusBar.format": "${author}, ${ago}: »${message}«",
+    "gitlens.keymap": "chorded",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": false
+    },
+    // stylusSupremacy
+    "stylusSupremacy.selectorSeparator": ",\n",
+    // file type specific
+    "[log]": {
+        "editor.fontSize": 11,
+        "editor.lineHeight": 15,
+        "editor.wordWrap": "off",
+        "editor.rulers": [],
+        "editor.renderWhitespace": "none",
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+    "[json]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[git-commit]": {
+        "editor.rulers": [72, 50],
+        "editor.wordWrap": "off"
+    }
+}

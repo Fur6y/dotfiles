@@ -1,5 +1,5 @@
 [include]
-	path = ~/dotfiles/gitconfig.private
+	path = ~/git/dotfiles/gitconfig.private
 [alias]
 	ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --numstat
 	ld = log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --graph --date=format:\"%a %d.%m.%y %H:%M\"
@@ -28,7 +28,8 @@
 [core]
 	editor = code --wait
 	excludesfile = /Users/fabian/.gitignore_global
-	pager = diff-so-fancy | less --raw-control-chars --tabs=4
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	autocrlf = false
 [fetch]
 	prune = true
 [remote "origin"]
@@ -52,3 +53,26 @@
 	rebase = true
 [tag]
 	gpgsign = true
+
+####################################
+# Color settings for diff-so-fancy #
+####################################
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

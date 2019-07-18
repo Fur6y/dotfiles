@@ -13,3 +13,21 @@ git config --global tag.gpgsign true
 
 gpg --armor --export <ID> | pbcopy
 ```
+
+## GnuPG config
+
+`~/.gnupg/gpg-agent.conf`
+
+Killing the agent after modifying the config file.
+
+```bash
+gpgconf --kill gpg-agent
+```
+
+## Fix the permissions for GnuPG config directory
+
+```bash
+chown -R $(whoami) ~/.gnupg
+find ~/.gnupg -type f -exec chmod 600 {} \;
+find ~/.gnupg -type d -exec chmod 700 {} \;
+```
