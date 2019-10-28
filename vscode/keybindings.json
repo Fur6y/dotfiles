@@ -83,5 +83,9 @@
         "key": "shift+cmd+f",
         "command": "-vueBeautify.format",
         "when": "editorTextFocus && editorTextFocus && !editorReadonly && resourceLangId == 'vue'"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "workbench.action.debug.selectandstart"
     }
 ]
